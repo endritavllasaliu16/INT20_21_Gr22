@@ -7,7 +7,9 @@
     <title>Dream house</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
     />
     <link
       rel="icon"
@@ -15,74 +17,143 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="/css/home.css" />
+    <link rel="stylesheet" href="/css/carousel.css" />
   </head>
   <body>
     <header>
-      <div>
-        <a href="/home.html">
-          <img
-            alt="Logo company logo"
-            src="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo.png"
-            width="350"
-            height="60"
-          />
-        </a>
-      </div>
-      <div class="navbar">
-        <div class="dropdown">
-          <div class="dropdown__main">
-            <a href="#">HOME</a>
-            <i class="fa fa-caret-down"></i>
-          </div>
-          <div class="dropdown-content">
-            <a href="#">HOME SLIDER</a>
-            <a href="#">HOME IMAGE</a>
-            <a href="#">HOME VIDEO</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown__main">
-            <a href="#">PROJECTS</a>
-            <i class="fa fa-caret-down"></i>
-          </div>
-          <div class="dropdown-content">
-            <a href="#">PROJECT MASONRY</a>
-            <a href="#">PROJECT GRID</a>
-            <a href="#">PROJECT DETAIL</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown__main">
-            <a href="#">ABOUT</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown__main">
-            <a href="#">BLOG</a>
-            <i class="fa fa-caret-down"></i>
-          </div>
-          <div class="dropdown-content">
-            <a href="#">BLOG GRID</a>
-            <a href="#">BLOG LIST</a>
-            <a href="#">BLOG POST</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown__main">
-            <a href="#">SHOP</a>
-            <i class="fa fa-caret-down"></i>
-          </div>
-          <div class="dropdown-content">
-            <a href="#">SHOP</a>
-            <a href="#">SHOP DETAIL</a>
-          </div>
-        </div>
-        <div class="dropdown">
-          <div class="dropdown__main">
-            <a href="#">CONTACT</a>
+      <div class="wrapper">
+        <div class="header">
+          <a href="/home.html">
+            <img
+              alt="Logo company logo"
+              src="/img/logo.png"
+              width="350"
+              height="60"
+            />
+          </a>
+
+          <div class="navbar">
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="home.html">HOME <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">HOME SLIDER</a>
+                <a href="#">HOME IMAGE</a>
+                <a href="#">HOME VIDEO</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="projects.html"
+                  >PROJECTS <i class="fas fa-angle-down"></i
+                ></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">PROJECT MASONRY</a>
+                <a href="#">PROJECT GRID</a>
+                <a href="#">PROJECT DETAIL</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="#">ABOUT</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="blog.html">BLOG <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">BLOG GRID</a>
+                <a href="#">BLOG LIST</a>
+                <a href="#">BLOG POST</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">SHOP</a>
+                <a href="#">SHOP DETAIL</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="#">CONTACT</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </header>
+
+    <main>
+      <section>
+        <div class="slider">
+          <div class="slide">
+            <div class="slide__content">
+              <h4 class="slider__content-info">Modern House</h4>
+              <h1 class="slider__content-title">
+                Dream House <br />
+                Architecture Studio
+              </h1>
+              <hr class="line" />
+              <p class="slider__content-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                dictum mattis velit, sit amet faucibus felis iaculis nec.
+              </p>
+              <button class="slider__content-more__info">Read More</button>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__content">
+              <h4 class="slider__content-info">Summer House</h4>
+              <h1 class="slider__content-title">
+                Modern <br />
+                Summer House
+              </h1>
+              <hr class="line" />
+              <p class="slider__content-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                dictum mattis velit, sit amet faucibus felis iaculis nec.
+              </p>
+              <button class="slider__content-more__info">Read More</button>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__content">
+              <h4 class="slider__content-info">Luxury houses</h4>
+              <h1 class="slider__content-title">
+                Luxury <br />
+                Residence here
+              </h1>
+              <hr class="line" />
+              <p class="slider__content-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                dictum mattis velit, sit amet faucibus felis iaculis nec.
+              </p>
+              <button class="slider__content-more__info">Read More</button>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__content">
+              <h4 class="slider__content-info">Modern House</h4>
+              <h1 class="slider__content-title">
+                Dream House <br />
+                Architecture Studio
+              </h1>
+              <hr class="line" />
+              <p class="slider__content-paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                dictum mattis velit, sit amet faucibus felis iaculis nec.
+              </p>
+              <button class="slider__content-more__info">Read More</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
