@@ -1,0 +1,121 @@
+.slider {
+  margin: 0 auto;
+  background-color: #eee;
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: 650px;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  animation: fade 20s infinite;
+}
+
+.slide:nth-child(1) {
+  background: url(http://specthemes.com/dreamhouse-template/dreamhouse/img/bg/bg11.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slide:nth-child(2) {
+  background: url(http://specthemes.com/dreamhouse-template/dreamhouse/img/bg/bg12.jpg)
+    no-repeat center center fixed;
+  animation-delay: 5s;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slide:nth-child(3) {
+  background: url(http://specthemes.com/dreamhouse-template/dreamhouse/img/bg/bg13.jpg)
+    no-repeat center center fixed;
+  animation-delay: 10s;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.slide:nth-child(4) {
+  background: url(http://specthemes.com/dreamhouse-template/dreamhouse/img/bg/bg4.jpg)
+    no-repeat center center fixed;
+  animation-delay: 15s;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  5% {
+    opacity: 1;
+  }
+
+  25% {
+    opacity: 1;
+  }
+
+  30% {
+    opacity: 0;
+  }
+}
+
+.slide__content {
+  width: 50%;
+  height: 50%;
+  text-align: center;
+  color: #eee;
+}
+
+.slider__content-info,
+.slider__content-title,
+.slider__content-paragraph,
+.slider__content-more__info {
+  margin: 20px;
+}
+
+.slider__content-info {
+  opacity: 0.5;
+}
+
+.slider__content-title {
+  font-size: 4em;
+}
+
+.slider__content-more__info {
+  padding: 12px 17px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: #2d2d2d;
+  border: none;
+  border-radius: 50px;
+}
+
+.line {
+  width: 200px;
+  height: 8px;
+  margin: 0 auto;
+  background-color: white;
+  opacity: 0.5;
+}
