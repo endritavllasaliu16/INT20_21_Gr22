@@ -4,59 +4,65 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>About</title>
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="about.css">
 	
 
 
  <style>
+
+/* Fotoja ne square 2 */
       .frame {
         width: 600px;
         height: 350px;
         border: 10px solid #f2f2f2;
         background:#fff;
         margin-top: 30px;
-        padding: 50px 60px;
+        padding: 30px 40px;
       }
 
 
+/* Dizajni i box-ave  */
 	.container{
 		width: 100%;
 		height: auto;
-        background: white;
-        margin-top: 50px;	
+                background: white;
+                margin-top: 50px;	
 	
-
 		/*flexbox*/
 		display: flex;
 		flex-direction: row;
 		justify-content:center;
-	}
+	       }
 
-
-	.box1{
+          .box1{
 		position: relative;
 		padding: 0px;
 		width: 20%;
 		height: 500px;
 		margin:10px;
 		text-align: left;
-		
-	}
+	      }
 
-	.box{
+	  .box{
 		position: relative;
 		width: 20%;
 		padding: 30px;
 		height: 500px;
-		background: #fff;
+		background: white;
 		border: 13px solid #bda87f;
-	    margin:10px;
-	    margin-top: 120px;
+	        margin:10px;
+	        margin-top: 120px;
 		box-sizing: border-box;
-
-
+		text-align: center;
+	      }
 	
-	}
+            ul{
+		list-style-type: none;
+		margin: 20px;
+              }
+	    li{
+		margin: 30px;
+	      }
 
 
 
@@ -64,22 +70,84 @@
 
 
 </head>
-<body>
-	
-<!-- pjesa nalt e headerit, lidhja mes webpages-->
 
-	<div class="navbar">
-			<a href="about.html" class="logo"><img src="images/logo.PNG" >
-				<nav><ul>
-						<li><a href="projekti.html">HOME</a></li>
-						<li><a href="">PROJECTS</a></li>
-						<li><a href="about.html">ABOUT</a></li>
-						<li><a href="services.html">SERVICES</a></li>
-						<li><a href="">SHOP</a></li>
-						<li><a href="">CONTACT</a></li>
-					</ul>
-				</nav>
-	</div>
+<body>
+
+	<!-- Pjesa e headerit,lidhja mes webpages -->
+
+	 <header>
+      <div class="wrapper">
+        <div class="header">
+          <a href="/home.html">
+            <img
+              alt="Logo company logo"
+              src="images/logo.PNG"
+              width="350"
+              height="60"
+            />
+          </a>
+
+          <div class="navbar">
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="home.html">HOME <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">HOME SLIDER</a>
+                <a href="#">HOME IMAGE</a>
+                <a href="#">HOME VIDEO</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="projects.html"
+                  >PROJECTS <i class="fas fa-angle-down"></i
+                ></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">PROJECT MASONRY</a>
+                <a href="#">PROJECT GRID</a>
+                <a href="#">PROJECT DETAIL</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="#">ABOUT</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="blog.html">BLOG <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="blog_grid.html">BLOG GRID</a>
+                <a href="blog_list.html">BLOG LIST</a>
+                <a href="#">BLOG POST</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">SHOP</a>
+                <a href="#">SHOP DETAIL</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="#">CONTACT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+
+	
+
 		
 		<!-- Fillimi i faqes "About", pjesa me background me foto te zeze, ku brenda seksionit gjenden dy div-a-->
 		<section class="Hyrja" style="background-image: url(images/geom.jpg);">
@@ -90,7 +158,7 @@
 			</div>
 			
 			<div class="posht">
-			<h3 ><span style="font-weight:normal">DREAM  HOUSE</h3>
+			<h3 ><span style="font-weight:normal">DREAM HOUSE</h3>
 		    </div>
 
 
@@ -99,94 +167,159 @@
 		<br><br><br>
 
 
-		<div id="squarecontainer">
+
+
+
+<!-- 4 squares me permbajtje te ndryshme -->
+
+<div id="squarecontainer">
+
+	
     <div id="square1">
     	<div class="headtitle">
-    		<h2><span>ABOUT US</span></h2>
-    		 
-    		 <p > <span class="font1">Hello! We are Dream House. Architecture Studio from USA</p><br><br>
-    		
+    		<h2 class="about_us__article-heading"><span>ABOUT US</span></h2>
+    	    <p><span class="article-title">Hello! We are Dream House. Architecture Studio from USA</p><br><br>
     	</div>
         
         <p ><span class="font2">Dream House Architecture was founded in 1994 with a commitment to making places better to live. We believe that architecture and design matter, and that through our work, we can make a positive difference in the world. We strive to create buildings that are not just things in themselves, but serve as catalysts for positive urban and social change.<br>
         With our integrated team of architects, interior designers, planners and engineers, we advocate for the people who are served by the spaces we design. We engage with our clients on a personal level, as both institutions and people, so we can help them do better what they do best.	<br>
-
         </p>
     </div>
- <div id="square2">
+ 
+	
+	
+    <div id="square2">
     	<div class="frame">
     		<img src="images/teamwork.jpg"  alt=“Picture_of_architecture_teamwork” style="width:600px; height: 350px;" >
-
-    	</div>
-    
-</div>
+        </div>
+    </div>
 
 
 <div id="squarecontainer">
-    <div id="square3">
-    	<div class="headtitle2">
-    		<h2><span>PROFESSIONAL TEAM</span></h2>
-    		 
-    		 <p > <span class="font3">Meet our head team:</p><br><br>
-    		
-    	</div>
-        
-        
-    </div>
- <div id="square4">
-    	
     
-</div>
+	
+	<div id="square3">
+    	<div class="headtitle2">
+    		<h2 class="about_us__article-heading"><span>PROFESSIONAL TEAM</span></h2>
+    		 <p > <span class="article-title">Meet our head team:</p><br><br>
+    	</div>
+    </div>
+   
+	
+	<div id="square4">
+    </div>
+
+
+
+
+
+
+<!-- Rreshti me fotot e punëtorve  -->
 
 
 <div class="row">
-  <div class="column">
-  	
-    <img src="images/portret1.jpg" alt="Proffesional team" style="width:100%">
-       <div class="tekst_overlay">
-    	    <h2>Laura Thorn</h2>
-    	    <h3>Project Maneger</h3>
-    	     <p>I came to San Francisco and MWA Architects with a Master’s Degree from the National University of Cordoba, Argentina. I have extensive experience working on architectural and interior design projects in several countries around the world with a strong background in managing and developing complex design projects, including residential, retail, mixed-use, hospitality, transportation, offices and, workplaces.
-
-</p>
-    	</div>
-  </div>
+         <div class="column">
+  	        <img src="images/portret1.jpg" alt="Proffesional team" style="width:100%">
+                    <div class="tekst_overlay">
+    	                <h2>Laura Thorn</h2>
+    	                <h3>Project Maneger</h3>
+    	                <p>I came to San Francisco and MWA Architects with a Master’s Degree from the National University of Cordoba, Argentina. I have extensive experience working on architectural and interior design projects in several countries around the world with a strong background in managing and developing complex design projects, including residential, retail, mixed-use, hospitality, transportation, offices and, workplaces.
+                       </p>
+    	             </div>
+         </div>
  
-  <div class="column">
-    <img src="images/portret2.jpg" alt="Profesional team " style="width:100%">
-    <div class="tekst_overlay">
-    	    <h2>Jack Semper</h2>
-    	    <h3>Designer</h3>
-    	    <p>My experience is in the planning and design of civic, industrial, and healthcare facilities. I came to SF and MWA with a BSAS from the University of Wisconsin and a Masters from the University of Illinois at Urbana-Champaign – I have a good Midwestern perspective on West Coast projects. My efforts have been focused on designing envelopes for the built environment, a skill that helps me develop exteriors that are robust and energy efficient while being aesthetically pleasing.
-
-</p>
-       </div>
-  </div>
-  <div class="column">
-    <img src="images/portret3.jpg" alt="Profesional team" style="width:100%">
-    <div class="tekst_overlay">
-    	    <h2>Philip Wilson</h2>
-    	    <h3>Architect</h3>
-    	     <p>Philip graduated from the University of Oregon, earning a bachelor’s degree in Architecture with a focus on sustainability. She was drawn to MWA because of our shared belief that social equity and environmentally responsible design go hand in hand. As a registered architect and AIA board member, he brings over 5 years of experience in mixed-use housing and higher education projects.
-
-</p>
-    </div>
-  </div>
-  <div class="column">
-    <img src="images/portret4.jpg" alt="Profesional team" style="width:100%">
-    <div class="tekst_overlay">
-    	    <h2>Amanda Rich</h2>
-    	    <h3>Interior Designer</h3>
-    	     <p>I bring a balance of technical expertise and strong communication skills to all my projects. I see my role as an advocate for my clients and their projects. Good design can resolve a wide range of issues, and I appreciate collaborating on design teams working on anything from pump stations in public parks to affordable housing for seniors.
-
-</p>
-       </div>
-  </div>
+        <div class="column">
+            <img src="images/portret2.jpg" alt="Profesional team " style="width:100%">
+                     <div class="tekst_overlay">
+    	                <h2>Jack Semper</h2>
+    	                <h3>Designer</h3>
+    	                <p>My experience is in the planning and design of civic, industrial, and healthcare facilities. I came to SF and MWA with a BSAS from the University of Wisconsin and a Masters from the University of Illinois at Urbana-Champaign – I have a good Midwestern perspective on West Coast projects. My efforts have been focused on designing envelopes for the built environment, a skill that helps me develop exteriors that are robust and energy efficient while being aesthetically pleasing.
+                        </p>
+                     </div>
+         </div>
+  
+		 <div class="column">
+			 <img src="images/portret3.jpg" alt="Profesional team" style="width:100%">
+			        <div class="tekst_overlay">
+    	                <h2>Philip Wilson</h2>
+    	                <h3>Architect</h3>
+    	                <p>Philip graduated from the University of Oregon, earning a bachelor’s degree in Architecture with a focus on sustainability. She was drawn to MWA because of our shared belief that social equity and environmentally responsible design go hand in hand. As a registered architect and AIA board member, he brings over 5 years of experience in mixed-use housing and higher education projects.
+                        </p>
+                     </div>
+         </div>
+  
+		 <div class="column">
+			   <img src="images/portret4.jpg" alt="Profesional team" style="width:100%">
+			         <div class="tekst_overlay">
+						 <h2>Amanda Rich</h2>
+						 <h3>Interior Designer</h3>
+						 <p>I bring a balance of technical expertise and strong communication skills to all my projects. I see my role as an advocate for my clients and their projects. Good design can resolve a wide range of issues, and I appreciate collaborating on design teams working on anything from pump stations in public parks to affordable housing for seniors.
+                                                 </p>
+				     </div>
+                 </div>
 </div>
 
 
 
- 
+
+
+
+<!-- Pjesa ku i tregon special prices e ndertume me 4 boxes  -->
+
+<div class="container">
+	<div class="box1">
+		<div class="section-heading">
+  		<h2 class="about_us__article-heading"><span>SPECIAL PRICES</span></h2>
+  		<p > <span class="article-title">Our pricing list:</p><br><br>
+  	</div>
+  	<p ><span class="font2">A price list is a list of prices defined for a set of items. Each price list is applicable to a particular customer or a group of customers for a particular duration. A pricing organization can define different price lists for customers based on various criteria. 
+	<br>
+  	</div>
+
+
+	<div class="box">
+	  <ul>
+		  <li class="Apartamenti">2 Room Apartament </li>
+		  <li class="cmimi">$49,000 </li>
+		  <li class="m_katror">77m<sup>2</sup> </li>
+		  <li class="m_katror">30m<sup>2</sup> </li>
+		  <li class="m_katror">15m<sup>2</sup> </li>
+	  </ul>
+	</div>
+
+	
+	<div class="box">
+		<ul>
+		  <li class="Apartamenti">3 Room Apartament </li>
+		  <li class="cmimi">$89,000 </li>
+		  <li class="m_katror">140m<sup>2</sup> </li>
+		  <li class="m_katror">80m<sup>2</sup> </li>
+		  <li class="m_katror">50m<sup>2</sup> </li>
+	        </ul>
+	</div>
+	
+	
+	<div class="box">
+		<ul>
+		  <li class="Apartamenti">4 Room Apartament </li>
+		  <li class="cmimi">$159,000 </li>
+		  <li class="m_katror">220m<sup>2</sup> </li>
+		  <li class="m_katror">150m<sup>2</sup> </li>
+		  <li class="m_katror">90m<sup>2</sup> </li>
+	       </ul>
+	</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
 
 </body>
 
