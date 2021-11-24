@@ -68,7 +68,8 @@
   background-position: 50% 100%;
 }
 
-.about_us__article__aside {
+.about_us__article__aside,
+.flinders_street__station__aside {
   padding-right: 100px;
 }
 
@@ -99,7 +100,8 @@
 
 .about_us__article-title,
 .luxury_house__article-title,
-.flinders_street__station-title {
+.flinders_street__station-title,
+.milwaukee_summer_house-title {
   font-size: 3em;
 }
 
@@ -112,6 +114,7 @@
 .about_us__article-info-house,
 .about_us__article-info-plans,
 .luxury_house__article-title,
+.milwaukee_summer_house-title,
 .flinders_street__station-title {
   padding: 30px 0;
 }
@@ -211,42 +214,30 @@
   transition: all 0.3s linear 0s;
 }
 
-.luxury_house__article {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 150px;
-}
-.luxury_house__article__aside {
-  padding-left: 100px;
-}
-
-.luxury_house__article-line {
-  width: 100px;
-  height: 8px;
-  margin-bottom: 20px;
-  background-color: #2d2d2d;
-}
-
-.luxury_house__article-paragraph {
-  line-height: 1.5;
-}
-
+.luxury_house__article,
+.milwaukee_summer_house__article,
 .flinders_street__station {
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
 }
-.flinders_street__station__aside {
+
+.luxury_house__article__aside,
+.milwaukee_summer_house__aside {
   padding-left: 100px;
 }
 
-.flinders_street__station-line {
+.luxury_house__article-line,
+.flinders_street__station-line,
+.milwaukee_summer_house-line {
   width: 100px;
   height: 8px;
   margin-bottom: 20px;
   background-color: #2d2d2d;
 }
 
+.luxury_house__article-paragraph,
+.milwaukee_summer_house-paragraph,
 .flinders_street__station-paragraph {
   line-height: 1.5;
 }
