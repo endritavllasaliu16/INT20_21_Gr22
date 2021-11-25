@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dream house</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="icon"
+      href="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo-shortcut.png"
+      type="image/x-icon"
+    />
+    <style>
+        * {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header,
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.dropdown .dropdown__main a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 33px 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 33px;
+  min-width: 160px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 3px 5px -1px #ccc;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown__main a:hover,
+.dropdown-content a:hover {
+  color: rgb(73, 62, 224);
+}
+body{
+                background-color: whitesmoke;
+            }
+            h1{
+                background-image: url("black.jpg");
+            }
+            table{
+                margin-top: 100px;
+                margin-bottom: 100px;
+                margin-right: 150px;
+                margin-left: 150px;
+            }
+            form{
+                margin-top: -350px;
+                margin-bottom: 200px;
+                margin-right: -100px;
+                margin-left:500px;
+
+            }
+            input{
+                height:1cm;
+            }
+            .button{
+                color:white;
+                background-color: rgb(78, 9, 9);
+                text-align: center;
+            }
+            .responsive-map{
+        overflow: hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        }
+        .responsive-map iframe{
+        left:0;
+        top:0;
+        height:50%;
+        width:100%;
+        position:absolute;
+        }
+    </style>
+</head>
+<header>
+    <div class="wrapper">
+      <div class="header">
+        <a href="/home.html">
+          <img
+            alt="Logo company logo"
+            src="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo.png"
+            width="350"
+            height="60"
+          />
+        </a>
+
+        <div class="navbar">
+          <div class="dropdown">
+            <div class="dropdown__main">
+              <a href="home.html">HOME <i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">HOME SLIDER</a>
+              <a href="#">HOME IMAGE</a>
+              <a href="#">HOME VIDEO</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown__main">
+              <a href="projects.html"
+                >PROJECTS <i class="fas fa-angle-down"></i
+              ></a>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">PROJECT MASONRY</a>
+              <a href="#">PROJECT GRID</a>
+              <a href="#">PROJECT DETAIL</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown__main">
+              <a href="#">ABOUT</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown__main">
+              <a href="blog.html">BLOG <i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">BLOG GRID</a>
+              <a href="#">BLOG LIST</a>
+              <a href="#">BLOG POST</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown__main">
+              <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
+            </div>
+            <div class="dropdown-content">
+              <a href="#">SHOP</a>
+              <a href="#">SHOP DETAIL</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <div class="dropdown__main">
+              <a href="#">CONTACT</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+ 
+    <h1 align="center" style="color:bisque">
+        <br><br><br><br<br>CONTACT
+        <br><br><br><br><br>
+    </h1>
+<br><br>
+    <!--Krijimi i tabelës së kontaktit-->
+    <table>
+        <!--Numri i telefonit-->
+        <tr>
+            <td>
+                <img src="phone-call.jpg" alt="Phone Icon" width="35" height="35">
+            </td>
+            <td>
+                <p  align="left" style="color:goldenrod">Phone</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">+383 800 25000 </td>
+        </tr>
+
+        <!--Adresa-->
+        <tr>
+            <td>
+                <img src="address-icon.jpg" alt="Address Icon" width="35" height="35">
+            </td>
+            <td>
+                <p align="left" style="color:goldenrod">Our Address</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">Sheshi "Zahir Pajaziti"</td>
+        </tr>
+        <tr>
+            <td>Prishtina</td>
+        </tr>
+
+        <!--E-mail Adresa-->
+        <tr>
+            <td>
+                <img src="email.jpg" alt="Email Icon" width="35" height="35">
+            </td>
+            <td>
+                <p align="left" style="color:goldenrod">Email</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">dreamhouse@mail.com</td>
+        </tr>
+        <tr>
+            <td colspan="2">dreamhouse@gmail.com</td>
+        </tr>
+    </table>
+    
+    <!--Krijimi i formave për klientët-->
+    <form action="">
+        <!--Emri i klientit-->
+        <label for="yourname"></label>
+        <input type="text" id="yourname" name="name" placeholder="Your name" required size="76">
+        <br><br>
+
+        <!--Email adresa e klientit dhe ajo se çfarë kërkon klienti-->
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="E-mail adress" required size="35">
+        <label for="password"></label>
+        <input type="password" id="password" name="password" palaceholer="Password" required size="35">
+        <br><br>
+        <label form="subject"></label>
+        <input type="text" id="subject" name="subject" placeholder="Subject" required size="76">
+        <br><br>
+
+        <!--Pjesa nëse klienti ka për të shtuar diçka-->
+        <label for="message" ></label>
+        <textarea name="message" id="message" type="message" placeholder="Your Message" rows="5" cols="71"></textarea>
+        <br><br>
+        <!--Krijimi i butonit për të dërguar mesazhin-->
+        <button class="button" style="height: 40px;width: 543px;">Send Message</button>
+
+    </form>
+  </section>
+
+  <div class="responsive-map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.
+    96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalke
+    r+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="250" height="90" frameborder="0" style="border:0" ></iframe>
+    </div>
+</body>
+</html>
