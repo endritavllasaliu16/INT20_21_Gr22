@@ -77,7 +77,8 @@
 
 .about_us__article-heading,
 .latest_news__article-heading,
-.special-prices__article-heading {
+.special-prices__article-heading,
+.partners__section-heading {
   position: relative;
   text-transform: uppercase;
   display: inline-block;
@@ -93,7 +94,8 @@
 
 .about_us__article-heading:after,
 .latest_news__article-heading:after,
-.special-prices__article-heading:after {
+.special-prices__article-heading:after,
+.partners__section-heading:after {
   content: "";
   position: absolute;
   display: block;
@@ -215,7 +217,8 @@
 .flinders_street__station,
 .latest_news__article,
 .special-prices__article,
-.company-stats {
+.company-stats,
+.partners__section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
