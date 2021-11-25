@@ -76,7 +76,8 @@
 }
 
 .about_us__article-heading,
-.latest_news__article-heading {
+.latest_news__article-heading,
+.special-prices__article-heading {
   position: relative;
   text-transform: uppercase;
   display: inline-block;
@@ -91,7 +92,8 @@
 }
 
 .about_us__article-heading:after,
-.latest_news__article-heading:after {
+.latest_news__article-heading:after,
+.special-prices__article-heading:after {
   content: "";
   position: absolute;
   display: block;
@@ -111,7 +113,8 @@
 }
 
 .about_us__article-info,
-.latest_news__article-news {
+.latest_news__article-news,
+.special-prices__article-offers {
   display: flex;
   justify-content: space-between;
 }
@@ -211,6 +214,7 @@
 .milwaukee_summer_house__article,
 .flinders_street__station,
 .latest_news__article,
+.special-prices__article,
 .company-stats {
   display: flex;
   justify-content: space-between;
@@ -249,7 +253,8 @@
 }
 
 .news__title,
-.news__line {
+.news__line,
+.price__line {
   margin-bottom: 20px;
 }
 
@@ -257,7 +262,8 @@
   opacity: 0.5;
 }
 
-.news__line {
+.news__line,
+.price__line {
   border: none;
   width: auto;
   height: 3px;
@@ -265,7 +271,7 @@
 }
 
 .medium__button {
-  padding: 12px 16px;
+  padding: 12px 10px;
   font-size: 12px;
   font-weight: 500;
   color: #fff;
@@ -277,13 +283,22 @@
   background: #2d2d2d;
 }
 
-.medium__button-black:hover {
+.medium__button-black:hover,
+.medium__button-lightsalmon__border:hover {
   background: #bda87f;
   color: #fff;
 }
 
 .medium__button-lightsalmon {
   background: #bda87f;
+  border: 3px solid #bda87f;
+}
+
+.medium__button-lightsalmon__border,
+.medium__button-lightsalmon:hover {
+  color: #bda87f;
+  border: 3px solid #bda87f;
+  background-color: white;
 }
 
 .company-stats {
@@ -319,4 +334,72 @@
 .stats-info {
   font-size: 1rem;
   padding: 10px 0;
+}
+
+.special-prices__article-info {
+  max-width: 350px;
+}
+
+.special-prices__article-info p {
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+.price {
+  height: auto;
+}
+
+.price:not(.best-price) {
+  border: 4px solid #ececec;
+  padding: 40px;
+}
+
+.price:not(.best-price):hover {
+  border-color: #bda87f;
+  transition: 0.5s;
+}
+
+.price:nth-child(odd) {
+  margin: 0 30px;
+}
+
+.best-price {
+  border: 4px solid #bda87f;
+  padding: 0 40px 40px 40px;
+}
+
+.price-badge {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 17px;
+  color: white;
+  background-color: #bda87f;
+  font-size: 14px;
+}
+
+.special-prices__article-offers {
+  text-align: center;
+}
+
+.price__offer {
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.apartment-space li {
+  list-style-type: none;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+.apartment-space li:not(:last-child)::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 1px;
+  width: 120px;
+  left: 0;
+  bottom: 0;
+  margin-top: 10px;
+  background: #dadada;
 }
