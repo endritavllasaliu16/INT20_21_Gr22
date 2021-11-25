@@ -11,7 +11,8 @@
 }
 
 .header,
-.navbar {
+.navbar,
+.company-stats-info-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -69,11 +70,13 @@
 }
 
 .about_us__article__aside,
-.flinders_street__station__aside {
+.flinders_street__station__aside,
+.company-info {
   padding-right: 100px;
 }
 
-.about_us__article-heading {
+.about_us__article-heading,
+.latest_news__article-heading {
   position: relative;
   text-transform: uppercase;
   display: inline-block;
@@ -87,7 +90,8 @@
   margin-bottom: 20px;
 }
 
-.about_us__article-heading:after {
+.about_us__article-heading:after,
+.latest_news__article-heading:after {
   content: "";
   position: absolute;
   display: block;
@@ -101,11 +105,13 @@
 .about_us__article-title,
 .luxury_house__article-title,
 .flinders_street__station-title,
-.milwaukee_summer_house-title {
+.milwaukee_summer_house-title,
+.company-stats-info-details {
   font-size: 3em;
 }
 
-.about_us__article-info {
+.about_us__article-info,
+.latest_news__article-news {
   display: flex;
   justify-content: space-between;
 }
@@ -115,12 +121,14 @@
 .about_us__article-info-plans,
 .luxury_house__article-title,
 .milwaukee_summer_house-title,
-.flinders_street__station-title {
+.flinders_street__station-title,
+.news__paragraph {
   padding: 30px 0;
 }
 
 .about_us__article-info-house p,
-.about_us__article-info-plans p {
+.about_us__article-info-plans p,
+.news__date {
   opacity: 0.5;
   font-size: 14px;
   font-weight: 500;
@@ -149,21 +157,6 @@
 
 .about_us__article-info-plans::before {
   background: url(/img/creative-art-plans.png) no-repeat;
-}
-
-.medium__button-black {
-  padding: 12px 17px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  background: #2d2d2d;
-  border: none;
-  border-radius: 50px;
-}
-
-.medium__button-black:hover {
-  background: #bda87f;
-  color: #fff;
 }
 
 .medium__button-black:hover:after {
@@ -216,7 +209,9 @@
 
 .luxury_house__article,
 .milwaukee_summer_house__article,
-.flinders_street__station {
+.flinders_street__station,
+.latest_news__article,
+.company-stats {
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
@@ -240,4 +235,88 @@
 .milwaukee_summer_house-paragraph,
 .flinders_street__station-paragraph {
   line-height: 1.5;
+}
+
+.news {
+  border: 2px solid #ececec;
+  padding: 40px;
+  height: auto;
+}
+
+.news:nth-child(even) {
+  border-left: none;
+  border-right: none;
+}
+
+.news__title,
+.news__line {
+  margin-bottom: 20px;
+}
+
+.news__paragraph {
+  opacity: 0.5;
+}
+
+.news__line {
+  border: none;
+  width: auto;
+  height: 3px;
+  background-color: #ececec;
+}
+
+.medium__button {
+  padding: 12px 16px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+
+.medium__button-black {
+  background: #2d2d2d;
+}
+
+.medium__button-black:hover {
+  background: #bda87f;
+  color: #fff;
+}
+
+.medium__button-lightsalmon {
+  background: #bda87f;
+}
+
+.company-stats {
+  background: url(http://specthemes.com/dreamhouse-template/dreamhouse/img/bg/bg4.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+  color: white;
+  padding: 150px 80px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.company-info {
+  font-size: 2em;
+}
+
+.company-stats-info-paragraph {
+  margin-bottom: 50px;
+}
+
+.stats {
+  text-shadow: 8px 8px 0 rgb(150 150 150 / 30%);
+}
+
+.stats::after {
+  content: "+";
+  text-shadow: 5px 5px 0 rgb(150 150 150 / 30%);
+}
+
+.stats-info {
+  font-size: 1rem;
+  padding: 10px 0;
 }
