@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop Detail</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />      
+    <link
+      rel="icon"
+      href="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo-shortcut.png"
+      type="image/x-icon"
+    />
+    <style>
+   * {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header,
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  padding: 10px 0;
+}
+.dropdown .dropdown__main a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 33px 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 33px;
+  min-width: 160px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 3px 5px -1px #ccc;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown__main a:hover,
+.dropdown-content a:hover {
+  color: rgb(73, 62, 224);
+}
+        body{
+            background-color: whitesmoke;
+        }
+        h1{
+            background-image: url("black.jpg");
+        }
+        table{
+          margin-top: 60px;
+          margin-left: 50px;
+          margin-bottom: 50px;
+          margin-right: 30px;
+        }
+        .table1{
+          margin-top: 65px;
+          margin-left: 50px;
+          margin-bottom: 50px;
+          margin-right: 20px;
+        }
+        .square{
+            width:350px;
+            height:350px;
+            font-family:Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin-top: -675px;  
+            margin-bottom: 200px;
+            margin-left: 885px; 
+            margin-right: 190px;  
+        }
+        .button{
+                color:white;
+                background-color: rgb(78, 9, 9);
+                text-align: center;
+                margin-top:-750px;
+                margin-bottom: 200px;
+                margin-right: 100px;
+                margin-left: 870px;
+            }
+        .responsive-map{
+        overflow: hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        }
+        .responsive-map iframe{
+        left:0;
+        top:0;
+        height:50%;
+        width:100%;
+        position:absolute;
+        }
+    </style>
+</head>
+<header>
+  <div class="wrapper">
+    <div class="header">
+      <a href="/home.html">
+        <img
+          alt="Logo company logo"
+          src="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo.png"
+          width="350"
+          height="60"
+        />
+      </a>
+      <div class="navbar">
+        <div class="dropdown">
+          <div class="dropdown__main">
+            <a href="home.html">HOME <i class="fas fa-angle-down"></i></a>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">HOME SLIDER</a>
+            <a href="#">HOME IMAGE</a>
+            <a href="#">HOME VIDEO</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown__main">
+            <a href="projects.html"
+              >PROJECTS <i class="fas fa-angle-down"></i
+            ></a>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">PROJECT MASONRY</a>
+            <a href="#">PROJECT GRID</a>
+            <a href="#">PROJECT DETAIL</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown__main">
+            <a href="#">ABOUT</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown__main">
+            <a href="blog.html">BLOG <i class="fas fa-angle-down"></i></a>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">BLOG GRID</a>
+            <a href="#">BLOG LIST</a>
+            <a href="#">BLOG POST</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown__main">
+            <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
+          </div>
+          <div class="dropdown-content">
+            <a href="#">SHOP</a>
+            <a href="#">SHOP DETAIL</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <div class="dropdown__main">
+            <a href="#">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<body>
+    <h1 align="center" style="color: bisque">
+        <br><br><br><br><br>Shop Detail
+        <br><br><br><br><br>
+    </h1>
+
+
+    <table>
+      <tr>
+        <td colspan="3" rowspan="4"><img src="vintagearmchair.jpg" alt="Vintage Arm Chair" width="300" height="300"></td>
+        <td colspan="3" rowspan="4"><img src="armchair1.jpg" alt="Arm Chair 1" width="300" height="300"></td>
+      </tr>
+      </table>
+
+      <table class="table1">
+      <tr>
+        <td colspan="3" rowspan="4"><img src="armchair2.jpg" alt="Arm Chair 2" width="300" height="300"></td>
+        <td colspan="3" rowspan="4"><img src="armchair3.jpg" alt="Arm Chair 3" width="300" height="300"></td>
+      </tr>
+    </table>
+
+    <div class="square">
+        <h2 style="color: darkblue;">Bromley Wing Back Chair</h2>
+        <br>
+        <p style="color: goldenrod;"><b>$ 2.500</b></p><br>
+        <p style="color: grey;">Hand Crafted in England. Upholstered in a stunning deep blue velvet, our generously proportioned Bromley chair is both elegant and timeless.Its welcoming stance will encourage you to curl up with a favourite read, whilst its curved wing back and plump seat will cradle you in comfort for your afternoon snooze. Style with our Elbert buttoned footstool for the perfect pairing in your living area or boudoir, a special chair for that special place in your home. The front legs on our Bromley chair…</p>
+        <br>
+        <p style="color: darkblue;"><b>Category:</b> </p>
+        <p style="color: grey;">Interior/ Arm</p>
+    </div>
+
+    <form>
+    <button class="button" style="height: 40px;width: 390px;">Add to Cart</button>
+    </form>
+
+    <div class="responsive-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.
+        96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalke
+        r+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="400" height="250" frameborder="0" style="border:0" ></iframe>
+     </div>
+</body>
+
+</html>
