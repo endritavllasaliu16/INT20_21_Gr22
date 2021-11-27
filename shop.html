@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Shop</title>
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous"
+      />
+      <link
+      rel="icon"
+      href="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo-shortcut.png"
+      type="image/x-icon"
+    />
+
+        <style>
+                    * {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.header,
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header {
+  padding: 10px 0;
+}
+.dropdown .dropdown__main a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 33px 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 33px;
+  min-width: 160px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 3px 5px -1px #ccc;
+  z-index: 1;
+}
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown__main a:hover,
+.dropdown-content a:hover {
+  color: rgb(73, 62, 224);
+}
+            body{
+                background-color: whitesmoke;
+            }
+            h1{
+                background-image: url("black.jpg");
+            }
+            .div1, .div2, .div3, .div4, .div5, .div6, .div7, .div8{
+                width: 200px;
+                height: 250px;
+                text-align: center;
+                color: black;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .div1{
+                margin-top: 90px;
+                margin-bottom: 30px;
+                margin-right: 10px;
+                margin-left: 200px;
+            }
+            .div2{
+                margin-top: -280px;
+                margin-bottom: -110px;
+                margin-right: 10px;
+                margin-left: 470px;
+            }
+            .div3{
+                margin-top:-250px;
+                margin-bottom: -100px;
+                margin-right: 10px;
+                margin-left: 740px;
+            }
+            .div4{
+                margin-top: -250px;
+                margin-bottom: -100px;
+                margin-right: 10px;
+                margin-left: 1010px;
+            }
+            .div5{
+                margin-top: 250px;
+                margin-bottom: -10px;
+                margin-right: 10px;
+                margin-left: 200px;
+            }
+            .div6{
+                margin-top: -250px;
+                margin-bottom: -10px;
+                margin-right: 10px;
+                margin-left: 470px;
+            }
+            .div7{
+                margin-top: -250px;
+                margin-bottom: -10px;
+                margin-right: 10px;
+                margin-left: 740px;
+            }
+            .div8{
+                margin-top: -250px;
+                margin-bottom: -10px;
+                margin-right: 10px;
+                margin-left: 1020px;
+            }
+            .button1, .button2, .button3, .button4, .button5, .button6, .button7, .button8{
+                color:white;
+                background-color: rgb(78,9,9);
+                text-align: center;
+            }
+            .fld1{
+              background-color:beige;
+              border-color: rgb(78,9,9);
+              margin-top: 50px;
+              margin-bottom: 50px;
+              margin-right: 50px;
+              margin-left: 50px;
+              text-align: center;
+            }
+            legend{
+              background-color: blanchedalmond;
+              color:rgb(78,9,9);
+              padding: 5px 10px;
+            }
+            input{
+              margin: 5px;
+            }
+            .responsive-map{
+        overflow: hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+        }
+        .responsive-map iframe{
+        left:0;
+        top:0;
+        height:50%;
+        width:100%;
+        position:absolute;
+        }   
+        </style>
+    </head>
+    <header>
+        <div class="wrapper">
+          <div class="header">
+            <a href="/home.html">
+              <img
+                alt="Logo company logo"
+                src="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo.png"
+                width="350"
+                height="60"
+              />
+            </a>
+            <div class="navbar">
+                <div class="dropdown">
+                  <div class="dropdown__main">
+                    <a href="home.html">HOME <i class="fas fa-angle-down"></i></a>
+                  </div>
+                  <div class="dropdown-content">
+                    <a href="#">HOME SLIDER</a>
+                    <a href="#">HOME IMAGE</a>
+                    <a href="#">HOME VIDEO</a>
+                  </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown__main">
+                      <a href="projects.html"
+                        >PROJECTS <i class="fas fa-angle-down"></i
+                      ></a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">PROJECT MASONRY</a>
+                        <a href="#">PROJECT GRID</a>
+                        <a href="#">PROJECT DETAIL</a>
+                      </div>
+                    </div>
+                    <div class="dropdown">
+                        <div class="dropdown__main">
+                          <a href="#">ABOUT</a>
+                        </div>
+                      </div>
+                      <div class="dropdown">
+                        <div class="dropdown__main">
+                          <a href="blog.html">BLOG <i class="fas fa-angle-down"></i></a>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">BLOG GRID</a>
+                            <a href="#">BLOG LIST</a>
+                            <a href="#">BLOG POST</a>
+                          </div>
+                        </div>
+                        <div class="dropdown">
+                            <div class="dropdown__main">
+                              <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
+                            </div>
+                            <div class="dropdown-content">
+                                <a href="#">SHOP</a>
+                                <a href="#">SHOP DETAIL</a>
+                              </div>
+                            </div>
+                            <div class="dropdown">
+                                <div class="dropdown__main">
+                                  <a href="#">CONTACT</a>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      </header>
+    
+    <body>
+        <h1 align="center" style="color:bisque">
+         <br><br><br><br><br> Shop
+         <br><br><br><br><br>
+        </h1>
+
+        <div class="div1">
+            <img src="softchair1.jpg" alt="Soft Chair 1" width="150" height="150">
+            <p>Soft Chair</p>
+            <p><b>$ 1.900</b></p>
+            <form>
+                <button class="button1" style="height: 40px; width: 200px;">View Product</button>
+            </form>
+        </div>
+
+        <div class="div2">
+            <img src="coffeetable1.jpg" alt="Coffee Table 1" width="150" height="150">
+            <p>Coffee Table</p>
+            <p><b>$ 1.100</b></p>
+            <form>
+                <button class="button2" style="height:40px; width:200px;">View Product</button>
+            </form>
+        </div>
+      
+        <div class="div3">
+            <img src="nightlight1.jpg" alt="Night Light 1" width="150" height="150">
+            <p>Night Light</p>
+            <p><b>$ 870</b></p>
+            <form>
+                <button class="button3" style="height: 40px; width: 200px;">View Product</button>
+            </form>
+        </div>
+
+        <div class="div4">
+            <img src="tabledesk1.jpg" alt="Desk Table 1" width="150" height="150">
+            <p>Desk Table</p>
+            <p><b>$ 1.400</b></p>
+            <form>
+                <button class="button4" style="height: 40px; width: 200px;">View Product</button>
+            </form>
+        </div>
+
+        <div class="div5">
+            <img src="softchair2.jpg" alt="Soft Chair 2" width="150" height="150">
+            <p>Soft Chair</p>
+            <p><b>$ 1.690</b></p>
+            <form>
+                <button class="button5" style="height: 40px; width:200px;">View Product</button>
+            </form>
+        </div>
+
+        <div class="div6">
+            <img src="coffeetable2.jpg" alt="Coffee Table 2" width="150" height="150">
+            <p>Coffee Table</p>
+            <p><b>$ 1.500</b></p>
+            <form>
+                <button class="button6" style="height: 40px; width:200px;">View Product</button>
+            </form>
+        </div>
+
+        <div class="div7">
+            <img src="nightlight2.jpg" alt="Night Light 2" width="150" height="150">
+            <p>Night Light</p>
+            <p><b>$ 790</b></p>
+            <form>
+                <button class="button7" style="height: 40px; width:200px;">View Product</button>
+            </form>
+        </div>
+
+        <div class="div8">
+            <img src="desktable2.jpg" alt="Desk Table 2" width="150" height="150">
+            <p>Desk Table</p>
+            <p><b>$ 1.750</b></p>
+            <form>
+                <button class="button8" style="height: 40px; width:200px;">View Product</button>
+            </form>
+        </div>
+
+        <form action="">
+          <fieldset class="fld1">
+            <legend>More Details:</legend>
+            <br>
+            <p><b>What do you want?</b></p>
+            <label for="buy"><u>Buy</u></label>
+            <input type="radio" id="buy" name="radio" value="buy">
+            <label for="look"><u>Look</u></label>
+            <input type="radio" id="look" name="radio" value="look">
+            <br><br>
+           <p><b> Products:</b></p>
+            <label for="sofa">Sofa</label>
+            <input type="checkbox" id="sofa" name="checkbox" value="sofa">
+            <label for="light">Light</label>
+            <input type="checkbox" id="light" name="checkbox" value="light">
+            <label for="table">Table</label>
+            <input type="checkbox" id="table" name="checkbox" value="table">
+            <label for="other">Other</label>
+            <input type="checkbox" id="other" name="checkbox" value="other">
+            <br><br>
+            <input type="submit" value="SUBMIT">
+          </fieldset>
+        </form>
+
+    <div class="responsive-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2822.7806761080233!2d-93.29138368446431!3d44.
+      96844997909819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x52b32b6ee2c87c91%3A0xc20dff2748d2bd92!2sWalke
+      r+Art+Center!5e0!3m2!1sen!2sus!4v1514524647889" width="400" height="90" frameborder="0" style="border:0" ></iframe>
+      </div>
+
+    </body>
+
+</html>
