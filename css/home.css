@@ -410,4 +410,76 @@
 
 .footer {
   background-color: #1d1d1d;
+  color: white;
+}
+
+footer div h4:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  background: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-content div {
+  max-width: 25%;
+  padding: 40px 0;
+}
+
+.footer-content__main {
+  font-size: 14px;
+}
+
+.footer-content__main p {
+  padding: 20px 0 5px;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  padding-top: 0;
+}
+
+.footer-site-map ul li,
+.footer-contact-us ul li,
+.footer-visit-us ul li,
+.footer-search ul li {
+  list-style-type: none;
+  padding: 5px 0;
+}
+
+.footer-site-map ul li:first-child,
+.footer-contact-us ul li:first-child,
+.footer-visit-us ul li:first-child {
+  padding-top: 20px;
+}
+
+.footer-site-map ul li a,
+.footer-contact-us ul li a,
+.footer-search ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.search {
+  margin: 15px 0;
+}
+
+input[type="text"] {
+  padding: 10px 30px 10px 5px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #2d2d2d;
+}
+
+input[type="text"]::placeholder {
+  color: white;
+}
+
+.nested-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
