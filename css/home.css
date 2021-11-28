@@ -11,7 +11,8 @@
 }
 
 .header,
-.navbar {
+.navbar,
+.company-stats-info-details {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -68,11 +69,16 @@
   background-position: 50% 100%;
 }
 
-.about_us__article__aside {
+.about_us__article__aside,
+.flinders_street__station__aside,
+.company-info {
   padding-right: 100px;
 }
 
-.about_us__article-heading {
+.about_us__article-heading,
+.latest_news__article-heading,
+.special-prices__article-heading,
+.partners__section-heading {
   position: relative;
   text-transform: uppercase;
   display: inline-block;
@@ -86,7 +92,10 @@
   margin-bottom: 20px;
 }
 
-.about_us__article-heading:after {
+.about_us__article-heading:after,
+.latest_news__article-heading:after,
+.special-prices__article-heading:after,
+.partners__section-heading:after {
   content: "";
   position: absolute;
   display: block;
@@ -99,11 +108,16 @@
 
 .about_us__article-title,
 .luxury_house__article-title,
-.flinders_street__station-title {
+.flinders_street__station-title,
+.milwaukee_summer_house-title,
+.company-stats-info-details {
   font-size: 3em;
 }
 
-.about_us__article-info {
+.about_us__article-info,
+.latest_news__article-news,
+.special-prices__article-offers,
+.footer-content {
   display: flex;
   justify-content: space-between;
 }
@@ -112,12 +126,15 @@
 .about_us__article-info-house,
 .about_us__article-info-plans,
 .luxury_house__article-title,
-.flinders_street__station-title {
+.milwaukee_summer_house-title,
+.flinders_street__station-title,
+.news__paragraph {
   padding: 30px 0;
 }
 
 .about_us__article-info-house p,
-.about_us__article-info-plans p {
+.about_us__article-info-plans p,
+.news__date {
   opacity: 0.5;
   font-size: 14px;
   font-weight: 500;
@@ -133,7 +150,7 @@
 .about_us__article-info-plans::before {
   content: "";
   display: block;
-  background: url(/img/my-house.png) no-repeat;
+  background: url(/images/my-house.png) no-repeat;
   width: 35px;
   height: 35px;
   float: left;
@@ -141,26 +158,11 @@
 }
 
 .about_us__article-info-house::before {
-  background: url(/img/my-house.png) no-repeat;
+  background: url(/images/my-house.png) no-repeat;
 }
 
 .about_us__article-info-plans::before {
-  background: url(/img/creative-art-plans.png) no-repeat;
-}
-
-.medium__button-black {
-  padding: 12px 17px;
-  font-size: 14px;
-  font-weight: 500;
-  color: #fff;
-  background: #2d2d2d;
-  border: none;
-  border-radius: 50px;
-}
-
-.medium__button-black:hover {
-  background: #bda87f;
-  color: #fff;
+  background: url(/images/creative-art-plans.png) no-repeat;
 }
 
 .medium__button-black:hover:after {
@@ -211,42 +213,273 @@
   transition: all 0.3s linear 0s;
 }
 
-.luxury_house__article {
+.luxury_house__article,
+.milwaukee_summer_house__article,
+.flinders_street__station,
+.latest_news__article,
+.special-prices__article,
+.company-stats,
+.partners__section {
   display: flex;
   justify-content: space-between;
   margin-bottom: 150px;
 }
-.luxury_house__article__aside {
+
+.luxury_house__article__aside,
+.milwaukee_summer_house__aside {
   padding-left: 100px;
 }
 
-.luxury_house__article-line {
+.luxury_house__article-line,
+.flinders_street__station-line,
+.milwaukee_summer_house-line {
   width: 100px;
   height: 8px;
   margin-bottom: 20px;
   background-color: #2d2d2d;
 }
 
-.luxury_house__article-paragraph {
-  line-height: 1.5;
-}
-
-.flinders_street__station {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 150px;
-}
-.flinders_street__station__aside {
-  padding-left: 100px;
-}
-
-.flinders_street__station-line {
-  width: 100px;
-  height: 8px;
-  margin-bottom: 20px;
-  background-color: #2d2d2d;
-}
-
+.luxury_house__article-paragraph,
+.milwaukee_summer_house-paragraph,
 .flinders_street__station-paragraph {
   line-height: 1.5;
+}
+
+.news {
+  border: 2px solid #ececec;
+  padding: 40px;
+  height: auto;
+}
+
+.news:nth-child(even) {
+  border-left: none;
+  border-right: none;
+}
+
+.news__title,
+.news__line,
+.price__line {
+  margin-bottom: 20px;
+}
+
+.news__paragraph {
+  opacity: 0.5;
+}
+
+.news__line,
+.price__line {
+  border: none;
+  width: auto;
+  height: 3px;
+  background-color: #ececec;
+}
+
+.medium__button {
+  padding: 12px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+}
+
+.medium__button-black {
+  background: #2d2d2d;
+}
+
+.medium__button-black:hover,
+.medium__button-lightsalmon__border:hover {
+  background: #bda87f;
+  color: #fff;
+}
+
+.medium__button-lightsalmon {
+  background: #bda87f;
+  border: 3px solid #bda87f;
+}
+
+.medium__button-lightsalmon__border,
+.medium__button-lightsalmon:hover {
+  color: #bda87f;
+  border: 3px solid #bda87f;
+  background-color: white;
+}
+
+.company-stats {
+  background: url(http://specthemes.com/dreamhouse-template/dreamhouse/img/bg/bg4.jpg)
+    no-repeat center center fixed;
+  background-size: cover;
+  height: 500px;
+  color: white;
+  padding: 150px 80px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.company-info {
+  font-size: 2em;
+}
+
+.company-stats-info-paragraph {
+  margin-bottom: 50px;
+}
+
+.stats {
+  text-shadow: 8px 8px 0 rgb(150 150 150 / 30%);
+}
+
+.stats::after {
+  content: "+";
+  text-shadow: 5px 5px 0 rgb(150 150 150 / 30%);
+}
+
+.stats-info {
+  font-size: 1rem;
+  padding: 10px 0;
+}
+
+.special-prices__article-info {
+  max-width: 350px;
+}
+
+.special-prices__article-info p {
+  margin-top: 20px;
+  line-height: 1.4;
+}
+
+.price {
+  height: auto;
+}
+
+.price:not(.best-price) {
+  border: 4px solid #ececec;
+  padding: 40px;
+}
+
+.price:not(.best-price):hover {
+  border-color: #bda87f;
+  transition: 0.5s;
+}
+
+.price:nth-child(odd) {
+  margin: 0 30px;
+}
+
+.best-price {
+  border: 4px solid #bda87f;
+  padding: 0 40px 40px 40px;
+}
+
+.price-badge {
+  display: inline-block;
+  padding: 5px;
+  margin-bottom: 17px;
+  color: white;
+  background-color: #bda87f;
+  font-size: 14px;
+}
+
+.special-prices__article-offers {
+  text-align: center;
+}
+
+.price__offer {
+  margin: 20px 0;
+  opacity: 0.7;
+}
+
+.apartment-space li {
+  list-style-type: none;
+  padding: 10px;
+  opacity: 0.5;
+}
+
+.apartment-space li:not(:last-child)::after {
+  content: "";
+  position: relative;
+  display: block;
+  height: 1px;
+  width: 120px;
+  left: 0;
+  bottom: 0;
+  margin-top: 10px;
+  background: #dadada;
+}
+
+.footer {
+  background-color: #1d1d1d;
+  color: white;
+}
+
+footer div h4:after {
+  content: "";
+  display: block;
+  width: 40%;
+  height: 1px;
+  background: #fff;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.footer-content div {
+  max-width: 25%;
+  padding: 40px 0;
+}
+
+.footer-content__main {
+  font-size: 14px;
+}
+
+.footer-content__main p {
+  padding: 20px 0 5px;
+}
+
+.footer-copyright {
+  font-size: 13px;
+  padding-top: 0;
+}
+
+.footer-site-map ul li,
+.footer-contact-us ul li,
+.footer-visit-us ul li,
+.footer-search ul li {
+  list-style-type: none;
+  padding: 5px 0;
+}
+
+.footer-site-map ul li:first-child,
+.footer-contact-us ul li:first-child,
+.footer-visit-us ul li:first-child {
+  padding-top: 20px;
+}
+
+.footer-site-map ul li a,
+.footer-contact-us ul li a,
+.footer-search ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.search {
+  margin: 15px 0;
+}
+
+input[type="text"] {
+  padding: 10px 30px 10px 5px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #2d2d2d;
+}
+
+input[type="text"]::placeholder {
+  color: white;
+}
+
+.nested-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
