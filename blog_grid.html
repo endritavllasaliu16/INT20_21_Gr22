@@ -6,15 +6,14 @@
 	<title>Blog</title>
 	<link rel="stylesheet" href="blog_grid.css">
 
-	<style>
+<style>
 
 		/* Dizajni i box-ave  */
 		.container{
 			width: 105%;
 			height: auto;
 			background: white;
-	
-			display: flex;
+	                display: flex;
 			flex-direction: row;
 			justify-content:center;
 		}
@@ -22,9 +21,9 @@
 		.box1{
 			position: relative;
 			width: 20%;
-	    }
+	        }
 		
-	    .box{
+	        .box{
 			position: relative;
 			width: 20%;
 			margin-top: 60px;
@@ -37,29 +36,30 @@
 		.box2{
 			position: relative;
 			width: 20%;
-			
 			background: white;
 			border: 1px solid lightgray;
 			box-sizing: border-box;
 			text-align: left;
+			margin-bottom: 120px;
 		}
 	
 		ul{
-			list-style-type: none;
-	    }
+	            list-style-type: none;
+	           }
 		
 		li{
-			margin: 30px;
+		    margin: 30px;
 		}
-	</style>
-
-
-
+	
+</style>
 
 </head>
+
+	
+
 <body>
 
-	<!-- KODI per Header -->
+<!-- KODI per Header -->
 	<header>
 		<div class="wrapper">
 		  <div class="header">
@@ -133,20 +133,19 @@
 
 
 
-	  <!-- Pjesa e zeze e fillimit, a.k.a Titulli i faqes , prezantimi -->
+<!-- Pjesa e zeze e fillimit, a.k.a Titulli i faqes , prezantimi -->
 <section class="Hyrja" style="background-image: url(images/geom.jpg);">
-	<br><br><br>
-	<div class="nalt">
-
-	<h3><span style="font-weight:normal">Blog Grid</h3>
-	</div>
-	
-	<div class="posht">
-	<h3 ><span style="font-weight:normal">DREAM  HOUSE</h3>
-	</div>
-
+ <br><br><br>
+			<div class="nalt">
+          <h3><span style="font-weight:normal">Blog Grid</span></h3>
+			</div>
+			
+			<div class="posht">
+			    <h3 ><span style="font-weight:normal">DREAM HOUSE</span></h3>
+		  </div>
 </section>
 <br><br><br>
+
 
 
 
@@ -156,8 +155,8 @@
          
 	<div class="box1">
             <div class="section-heading">
-                <h2 class="article-heading"><span>LATEST NEWS</span></h2>
-                <p > <span class="article-title">Fresh update for you, read with detail:</p><br><br>
+                <h2 class="article-heading">LATEST NEWS</h2>
+                <p class="article-title">Fresh update for you, read with detail:</p><br><br>
             </div>
     </div>
 
@@ -232,6 +231,30 @@
 </div>
 
 
+	
+	
+	
+	
+<!-- Pjesa e fundit, para footerit, "Great Clients" me foto levizese. -->
+
+<table width="95%">
+<tr>
+	<td width="35%"> 
+	        <h2 class="heading">Our Clients</h2>
+    	    <p class="article-titll">Great Clients</p><br><br>
+    </td>
+	
+	<td width="65%">
+		<marquee behavior="alternate"; width="100%"; onmouseover="this.stop()"; onmouseout="this.start()";>
+			<img src="images/partner2.jpg" height="120px">
+			<img src="images/partner5.jpg" height="120px">
+			<img src="images/partner3.jpg" height="120px">
+			<img src="images/partner1.jpg" height="120px">
+			<img src="images/partner4.jpg" height="120px">
+		</marquee>	
+    </td>
+</tr>
+</table>
 
 
 
