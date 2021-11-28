@@ -63,13 +63,13 @@
    /* Pjesa e prezantimit te faqes Blog Post      */
 
   .nalt{
-	     text-align: center;
+	 text-align: center;
          font-size: 50px;
          height: 100px;
          font-weight: normal;
          text-shadow: -4px 20px 0px rgba(255,255,255,0.19);
-	     color: white;
-	     font-family: palatino;
+	 color: white;
+	 font-family: palatino;
          display: flex;
          align-items: center;
          justify-content: center;
@@ -77,22 +77,24 @@
 }
 .posht{
 	
-	    letter-spacing: 12px;
-        font-size: 17px;
-        color: white;
-	    vertical-align: text-top;
-	    text-align: center;
-	    height: 100px;
-	    font-family: garamond;
-	    font-weight: normal;
+	 letter-spacing: 12px;
+         font-size: 17px;
+         color: white;
+	 vertical-align: text-top;
+	  text-align: center;
+	  height: 100px;
+	  font-family: garamond;
+	  font-weight: normal;
 }
 
-
+/*Klasa center permban tabelen kryesore*/
 .center {
   margin-left: auto;
   margin-right: auto;
   border: 1px solid lightgray;
 }
+
+
 
 .Fillimi_titulli{
     font-family: sans-serif;
@@ -100,9 +102,8 @@
     font-size: 33px;
     letter-spacing: 1PX;
     padding-bottom: 10px;
-    
+ }
 
-}
 
 .font1{
         font-size: 17px;
@@ -131,21 +132,20 @@
 ul.blog_post_lista{
     list-style-type: circle;
     padding-left: 20px;
-    
-
-}
+ }
 
 li{
-            margin: 12px;
-
-            font-family: sans-serif;
-            color: black;
-            font-size: 17px;
+    margin: 12px;
+    font-family: sans-serif;
+    color: black;
+    font-size: 17px;
         }
 li:hover{
        transform: translateX(15px);
        color:#bda87f ;
 }
+
+
 
 
 
@@ -163,30 +163,24 @@ li:hover{
 
   }
   
-  .butoni:hover {
+ .butoni:hover {
     background: #bda87f;
     color: #fff;
     transition-duration: 0.3s;
   }
-
-
 
 .comment-box{
     top: 50%;
    /* left: 50%;*/
     position: relative;
     float: left;
-
-
 }
 
 .comment-box h2{
     font-size: 23px;
     font-family: montserrat;
     margin-bottom: 15px;
-  
-
-}
+  }
 
 .comment-box input{
     width: 100%;
