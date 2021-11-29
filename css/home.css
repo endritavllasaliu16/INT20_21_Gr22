@@ -106,6 +106,14 @@
   padding-top: 15px;
 }
 
+.about__us-style__lists,
+.design-style__order__list,
+.minimalist__order__list,
+.traditional__order__list,
+.data__list dd {
+  margin-left: 20px;
+}
+
 .about_us__article-title,
 .luxury_house__article-title,
 .flinders_street__station-title,
@@ -179,7 +187,7 @@
 .outline-bordered-right,
 .outline-bordered-left {
   position: relative;
-  z-index: 999;
+  z-index: 3;
 }
 
 .outline-bordered-right:after {
@@ -451,7 +459,8 @@ footer div h4:after {
 
 .footer-site-map ul li:first-child,
 .footer-contact-us ul li:first-child,
-.footer-visit-us ul li:first-child {
+.footer-visit-us ul li:first-child,
+.about__us-style__lists {
   padding-top: 20px;
 }
 
@@ -482,4 +491,22 @@ input[type="text"]::placeholder {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 40px;
+  bottom: 40px;
+  height: 50px;
+  width: 50px;
+  margin: 0;
+  padding: 0;
+  background-color: #bda87f;
+  border-radius: 50%;
+  box-shadow: 0px 1px 2px 2px rgb(165, 163, 163);
+  z-index: 4;
+}
+
+.up-arrow {
+  padding: 25%;
 }
