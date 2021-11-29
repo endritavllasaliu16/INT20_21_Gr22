@@ -1,264 +1,274 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Blog</title>
-	<link rel="stylesheet" href="blog_grid.css">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Blog</title>
+    <link rel="stylesheet" href="blog_grid.css" />
 
-<style>
+    <style>
+      /* Dizajni i box-ave  */
+      .container {
+        width: 105%;
+        height: auto;
+        background: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
 
-		/* Dizajni i box-ave  */
-		.container{
-			width: 105%;
-			height: auto;
-			background: white;
-	                display: flex;
-			flex-direction: row;
-			justify-content:center;
-		}
-	
-		.box1{
-			position: relative;
-			width: 20%;
-	        }
-		
-	        .box{
-			position: relative;
-			width: 20%;
-			margin-top: 60px;
-			background: white;
-			border: 1px solid lightgray;
-			box-sizing: border-box;
-			text-align: left;
-		}
-		
-		.box2{
-			position: relative;
-			width: 20%;
-			background: white;
-			border: 1px solid lightgray;
-			box-sizing: border-box;
-			text-align: left;
-			margin-bottom: 120px;
-		}
-	
-		ul{
-	            list-style-type: none;
-	           }
-		
-		li{
-		    margin: 30px;
-		}
-	
-</style>
+      .box1 {
+        position: relative;
+        width: 20%;
+      }
 
-</head>
+      .box {
+        position: relative;
+        width: 20%;
+        margin-top: 60px;
+        background: white;
+        border: 1px solid lightgray;
+        box-sizing: border-box;
+        text-align: left;
+      }
 
-	
+      .box2 {
+        position: relative;
+        width: 20%;
+        background: white;
+        border: 1px solid lightgray;
+        box-sizing: border-box;
+        text-align: left;
+        margin-bottom: 120px;
+      }
 
-<body>
+      ul {
+        list-style-type: none;
+      }
 
-<!-- KODI per Header -->
-	<header>
-		<div class="wrapper">
-		  <div class="header">
-			<a href="/home.html">
-			  <img
-				alt="Logo company logo"
-				src="images/logo.PNG"
-				width="350"
-				height="60"
-			  />
-			</a>
-  
-			<div class="navbar">
-			  <div class="dropdown">
-				<div class="dropdown__main">
-				  <a href="home.html">HOME <i class="fas fa-angle-down"></i></a>
-				</div>
-				<div class="dropdown-content">
-				  <a href="#">HOME SLIDER</a>
-				  <a href="#">HOME IMAGE</a>
-				  <a href="#">HOME VIDEO</a>
-				</div>
-			  </div>
-			  <div class="dropdown">
-				<div class="dropdown__main">
-				  <a href="projects.html"
-					>PROJECTS <i class="fas fa-angle-down"></i
-				  ></a>
-				</div>
-				<div class="dropdown-content">
-				  <a href="#">PROJECT MASONRY</a>
-				  <a href="#">PROJECT GRID</a>
-				  <a href="#">PROJECT DETAIL</a>
-				</div>
-			  </div>
-			  <div class="dropdown">
-				<div class="dropdown__main">
-				  <a href="about.html">ABOUT</a>
-				</div>
-			  </div>
-			  <div class="dropdown">
-				<div class="dropdown__main">
-				  <a href="">BLOG <i class="fas fa-angle-down"></i></a>
-				</div>
-				<div class="dropdown-content">
-				  <a href="blog_grid.html">BLOG GRID</a>
-				  <a href="blog_list.html">BLOG LIST</a>
-				  <a href="#">BLOG POST</a>
-				</div>
-			  </div>
-			  <div class="dropdown">
-				<div class="dropdown__main">
-				  <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
-				</div>
-				<div class="dropdown-content">
-				  <a href="#">SHOP</a>
-				  <a href="#">SHOP DETAIL</a>
-				</div>
-			  </div>
-			  <div class="dropdown">
-				<div class="dropdown__main">
-				  <a href="#">CONTACT</a>
-				</div>
-			  </div>
-			</div>
-		  </div>
-		</div>
-	  </header>
+      li {
+        margin: 30px;
+      }
+    </style>
+  </head>
 
+  <body>
+    <!-- KODI per Header -->
+    <header>
+      <div class="wrapper">
+        <div class="header">
+          <a href="/home.html">
+            <img
+              alt="Logo company logo"
+              src="images/logo.PNG"
+              width="350"
+              height="60"
+            />
+          </a>
 
-
-
-
-<!-- Pjesa e zeze e fillimit, a.k.a Titulli i faqes , prezantimi -->
-<section class="Hyrja" style="background-image: url(images/geom.jpg);">
- <br><br><br>
-			<div class="nalt">
-          <h3><span style="font-weight:normal">Blog Grid</span></h3>
-			</div>
-			
-			<div class="posht">
-			    <h3 ><span style="font-weight:normal">DREAM HOUSE</span></h3>
-		  </div>
-</section>
-<br><br><br>
-
-
-
-
-<!-- Permbajtja brenda e faqes, qe eshte ba kryesisht me boxes -->
-
-<div class="container">
-         
-	<div class="box1">
-            <div class="section-heading">
-                <h2 class="article-heading">LATEST NEWS</h2>
-                <p class="article-title">Fresh update for you, read with detail:</p><br><br>
+          <div class="navbar">
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="home.html">HOME <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="home.html">HOME SLIDER</a>
+                <a href="#">HOME IMAGE</a>
+                <a href="#">HOME VIDEO</a>
+              </div>
             </div>
-    </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="projects.html"
+                  >PROJECTS <i class="fas fa-angle-down"></i
+                ></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">PROJECT MASONRY</a>
+                <a href="#">PROJECT GRID</a>
+                <a href="#">PROJECT DETAIL</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="about.html">ABOUT</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="">BLOG <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="blog_grid.html">BLOG GRID</a>
+                <a href="blog_list.html">BLOG LIST</a>
+                <a href="#">BLOG POST</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
+              </div>
+              <div class="dropdown-content">
+                <a href="#">SHOP</a>
+                <a href="#">SHOP DETAIL</a>
+              </div>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown__main">
+                <a href="#">CONTACT</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <div class="box">
+    <!-- Pjesa e zeze e fillimit, a.k.a Titulli i faqes , prezantimi -->
+    <section class="Hyrja" style="background-image: url(images/geom.jpg)">
+      <br /><br /><br />
+      <div class="nalt">
+        <h3><span style="font-weight: normal">Blog Grid</span></h3>
+      </div>
+
+      <div class="posht">
+        <h3><span style="font-weight: normal">DREAM HOUSE</span></h3>
+      </div>
+    </section>
+    <br /><br /><br />
+
+    <!-- Permbajtja brenda e faqes, qe eshte ba kryesisht me boxes -->
+
+    <div class="container">
+      <div class="box1">
+        <div class="section-heading">
+          <h2 class="article-heading">LATEST NEWS</h2>
+          <p class="article-title">Fresh update for you, read with detail:</p>
+          <br /><br />
+        </div>
+      </div>
+
+      <div class="box">
         <ul>
-            <li class="Emri_box">Plant Trees While Searching The Web</li>
-            <li class="Data">Nov 23,2021 </li>
-            <li class="Pershkrimi" style="border-bottom: 2px solid lightgray ;">We use the profit we make from your searches to plant trees where they are needed most. Get the free browser extension and plant trees with every search.</li>
-            <li><button class="butoni">Read More</button></li>
+          <li class="Emri_box">Plant Trees While Searching The Web</li>
+          <li class="Data">Nov 23,2021</li>
+          <li class="Pershkrimi" style="border-bottom: 2px solid lightgray">
+            We use the profit we make from your searches to plant trees where
+            they are needed most. Get the free browser extension and plant trees
+            with every search.
+          </li>
+          <li><button class="butoni">Read More</button></li>
         </ul>
-	</div>
+      </div>
 
-    <div class="box">
+      <div class="box">
         <ul>
-            <li class="Emri_box">Plant Trees While Searching The Web</li>
-            <li class="Data">Nov 23,2021 </li>
-            <li class="Pershkrimi" style="border-bottom: 2px solid lightgray ;">We use the profit we make from your searches to plant trees where they are needed most. Get the free browser extension and plant trees with every search.</li>
-            <li><button class="butoni">Read More</button></li>
+          <li class="Emri_box">Plant Trees While Searching The Web</li>
+          <li class="Data">Nov 23,2021</li>
+          <li class="Pershkrimi" style="border-bottom: 2px solid lightgray">
+            We use the profit we make from your searches to plant trees where
+            they are needed most. Get the free browser extension and plant trees
+            with every search.
+          </li>
+          <li><button class="butoni">Read More</button></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="box">
-         <ul>
-            <li class="Emri_box">Plant Trees While Searching The Web</li>
-            <li class="Data">Nov 23,2021 </li>
-            <li class="Pershkrimi" style="border-bottom: 2px solid lightgray ;">We use the profit we make from your searches to plant trees where they are needed most. Get the free browser extension and plant trees with every search. </li>
-            <li><button class="butoni">Read More</button></li>
-        </ul>
-    </div>
-
-
-</div>
-<div class="container">
-   
-	<div class="box2">
+      <div class="box">
         <ul>
-            <li class="Emri_box">Plant Trees While Searching The Web</li>
-            <li class="Data">Nov 23,2021 </li>
-            <li class="Pershkrimi" style="border-bottom: 2px solid lightgray ;">We use the profit we make from your searches to plant trees where they are needed most. Get the free browser extension and plant trees with every search.</li>
-			<li><button class="butoni">Read More</button></li>
+          <li class="Emri_box">Plant Trees While Searching The Web</li>
+          <li class="Data">Nov 23,2021</li>
+          <li class="Pershkrimi" style="border-bottom: 2px solid lightgray">
+            We use the profit we make from your searches to plant trees where
+            they are needed most. Get the free browser extension and plant trees
+            with every search.
+          </li>
+          <li><button class="butoni">Read More</button></li>
         </ul>
+      </div>
     </div>
-
-	<div class="box2">
+    <div class="container">
+      <div class="box2">
         <ul>
-            <li class="Emri_box">Plant Trees While Searching The Web</li>
-            <li class="Data">Nov 23,2021 </li>
-            <li class="Pershkrimi" style="border-bottom: 2px solid lightgray ;">We use the profit we make from your searches to plant trees where they are needed most. Get the free browser extension and plant trees with every search. </li>
-            <li><button class="butoni">Read More</button></li>
+          <li class="Emri_box">Plant Trees While Searching The Web</li>
+          <li class="Data">Nov 23,2021</li>
+          <li class="Pershkrimi" style="border-bottom: 2px solid lightgray">
+            We use the profit we make from your searches to plant trees where
+            they are needed most. Get the free browser extension and plant trees
+            with every search.
+          </li>
+          <li><button class="butoni">Read More</button></li>
         </ul>
-    </div>
+      </div>
 
-    <div class="box2">
+      <div class="box2">
         <ul>
-			<li class="Emri_box">Plant Trees While Searching The Web</li>
-            <li class="Data">Nov 23,2021 </li>
-            <li class="Pershkrimi" style="border-bottom: 2px solid lightgray ;">We use the profit we make from your searches to plant trees where they are needed most. Get the free browser extension and plant trees with every search. </li>
-            <li><button class="butoni">Read More</button></li>
-        </ul> 
-    </div>
-
-    <div class="box2">
-        <ul>
-            <li class="Emri_box">Plant Trees While Searching The Web</li>
-            <li class="Data">Nov 23,2021 </li>
-            <li class="Pershkrimi" style="border-bottom: 2px solid lightgray ;">We use the profit we make from your searches to plant trees where they are needed most. Get the free browser extension and plant trees with every search. </li>
-            <li><button class="butoni">Read More</button></li>
+          <li class="Emri_box">Plant Trees While Searching The Web</li>
+          <li class="Data">Nov 23,2021</li>
+          <li class="Pershkrimi" style="border-bottom: 2px solid lightgray">
+            We use the profit we make from your searches to plant trees where
+            they are needed most. Get the free browser extension and plant trees
+            with every search.
+          </li>
+          <li><button class="butoni">Read More</button></li>
         </ul>
+      </div>
+
+      <div class="box2">
+        <ul>
+          <li class="Emri_box">Plant Trees While Searching The Web</li>
+          <li class="Data">Nov 23,2021</li>
+          <li class="Pershkrimi" style="border-bottom: 2px solid lightgray">
+            We use the profit we make from your searches to plant trees where
+            they are needed most. Get the free browser extension and plant trees
+            with every search.
+          </li>
+          <li><button class="butoni">Read More</button></li>
+        </ul>
+      </div>
+
+      <div class="box2">
+        <ul>
+          <li class="Emri_box">Plant Trees While Searching The Web</li>
+          <li class="Data">Nov 23,2021</li>
+          <li class="Pershkrimi" style="border-bottom: 2px solid lightgray">
+            We use the profit we make from your searches to plant trees where
+            they are needed most. Get the free browser extension and plant trees
+            with every search.
+          </li>
+          <li><button class="butoni">Read More</button></li>
+        </ul>
+      </div>
     </div>
 
+    <!-- Pjesa e fundit, para footerit, "Great Clients" me foto levizese. -->
 
-</div>
+    <table width="95%">
+      <tr>
+        <td width="35%">
+          <h2 class="heading">Our Clients</h2>
+          <p class="article-titll">Great Clients</p>
+          <br /><br />
+        </td>
 
-
-	
-	
-	
-	
-<!-- Pjesa e fundit, para footerit, "Great Clients" me foto levizese. -->
-
-<table width="95%">
-<tr>
-	<td width="35%"> 
-	        <h2 class="heading">Our Clients</h2>
-    	    <p class="article-titll">Great Clients</p><br><br>
-    </td>
-	
-	<td width="65%">
-		<marquee behavior="alternate"; width="100%"; onmouseover="this.stop()"; onmouseout="this.start()";>
-			<img src="images/partner2.jpg" height="120px">
-			<img src="images/partner5.jpg" height="120px">
-			<img src="images/partner3.jpg" height="120px">
-			<img src="images/partner1.jpg" height="120px">
-			<img src="images/partner4.jpg" height="120px">
-		</marquee>	
-    </td>
-</tr>
-</table>
-
-
-
-
-</body>
-
+        <td width="65%">
+          <marquee
+            behavior="alternate"
+            ;
+            width="100%"
+            ;
+            onmouseover="this.stop()"
+            ;
+            onmouseout="this.start()"
+            ;
+          >
+            <img src="images/partner2.jpg" height="120px" />
+            <img src="images/partner5.jpg" height="120px" />
+            <img src="images/partner3.jpg" height="120px" />
+            <img src="images/partner1.jpg" height="120px" />
+            <img src="images/partner4.jpg" height="120px" />
+          </marquee>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>

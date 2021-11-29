@@ -23,7 +23,7 @@
     <header>
       <div class="wrapper">
         <div class="header">
-          <a href="/home.html">
+          <a href="/home.html" id="logo">
             <img
               alt="Logo company logo"
               src="/images/logo.png"
@@ -38,16 +38,14 @@
                 <a href="home.html">HOME <i class="fas fa-angle-down"></i></a>
               </div>
               <div class="dropdown-content">
-                <a href="#">HOME SLIDER</a>
+                <a href="home.html">HOME SLIDER</a>
                 <a href="#">HOME IMAGE</a>
                 <a href="#">HOME VIDEO</a>
               </div>
             </div>
             <div class="dropdown">
               <div class="dropdown__main">
-                <a href="projects.html"
-                  >PROJECTS <i class="fas fa-angle-down"></i
-                ></a>
+                <a href="#">PROJECTS <i class="fas fa-angle-down"></i></a>
               </div>
               <div class="dropdown-content">
                 <a href="#">PROJECT MASONRY</a>
@@ -57,17 +55,19 @@
             </div>
             <div class="dropdown">
               <div class="dropdown__main">
-                <a href="#">ABOUT</a>
+                <a href="about.html">ABOUT</a>
               </div>
             </div>
             <div class="dropdown">
               <div class="dropdown__main">
-                <a href="blog.html">BLOG <i class="fas fa-angle-down"></i></a>
+                <a href="blog_grid.html"
+                  >BLOG <i class="fas fa-angle-down"></i
+                ></a>
               </div>
               <div class="dropdown-content">
-                <a href="#">BLOG GRID</a>
-                <a href="#">BLOG LIST</a>
-                <a href="#">BLOG POST</a>
+                <a href="blog_grid.html">BLOG GRID</a>
+                <a href="blog_list.html">BLOG LIST</a>
+                <a href="blog_post.html">BLOG POST</a>
               </div>
             </div>
             <div class="dropdown">
@@ -75,13 +75,13 @@
                 <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
               </div>
               <div class="dropdown-content">
-                <a href="#">SHOP</a>
-                <a href="#">SHOP DETAIL</a>
+                <a href="shop.html">SHOP</a>
+                <a href="shopdetail.html">SHOP DETAIL</a>
               </div>
             </div>
             <div class="dropdown">
               <div class="dropdown__main">
-                <a href="#">CONTACT</a>
+                <a href="contact.html">CONTACT</a>
               </div>
             </div>
           </div>
@@ -167,14 +167,18 @@
               ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
               magna vel molestie faucibus. Cras lacinia magna vel molestie
               faucibus. Donec auctor et urnaLorem ipsum dolor sit amet,
-              consectetur adipiscing elit. Cras lacinia magna vel molestie
-              faucibus.
+              consectetur adipiscing elit.
             </p>
-            <br />
+            <dl class="data__list" style="padding: 10px 0">
+              <dt>Interior design</dt>
+              <dd>
+                Business & Institutional Furniture Manufacturers Association
+              </dd>
+            </dl>
+
             <p class="about_us__article-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              lacinia magna vel molestie faucibus. Donec auctor et urnaLorem
-              ipsum dolor sit amet, consectetur adipiscing elit.
+              lacinia magna vel molestie faucibus.
             </p>
             <div class="about_us__article-info">
               <div class="about_us__article-info-house">
@@ -228,9 +232,30 @@
             <p class="flinders_street__station-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
               lacinia magna vel molestie faucibus. <br />
-              auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Cras lacinia magna vel molestie faucibus
             </p>
+            <ul class="about__us-style__lists">
+              <li>Interior design styles</li>
+              <ol
+                style="list-style-type: upper-roman"
+                class="design-style__order__list"
+              >
+                <li>Minimalist</li>
+                <ol class="minimalist__order__list">
+                  <li>Bohemian</li>
+                  <li>Mid-Century Modern</li>
+                </ol>
+                <li>Traditional</li>
+                <ol
+                  style="list-style-type: square"
+                  class="traditional__order__list"
+                >
+                  <li>Industrial</li>
+                  <li>Eclectic</li>
+                </ol>
+                <li>Transitional</li>
+                <li>Rustic</li>
+              </ol>
+            </ul>
           </aside>
           <div class="outline-bordered-right">
             <img
@@ -445,6 +470,13 @@
               <li><a href="about.html">About</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a
+                  href="https://www.aims.ca/site/media/aims/2.pdf"
+                  target="_blank"
+                  >Info</a
+                >
+              </li>
             </ul>
           </div>
           <div class="footer-contact-us">
@@ -474,7 +506,7 @@
 
               <ul class="nested-list">
                 <li>
-                  <a href=""
+                  <a href="https://www.facebook.com/" target="_blank"
                     ><img
                       src="/images/facebook.png"
                       alt="facebook logo"
@@ -483,7 +515,7 @@
                   /></a>
                 </li>
                 <li>
-                  <a href="">
+                  <a href="https://www.instagram.com/" target="_blank">
                     <img
                       src="/images/instagram.png"
                       alt="instagram logo"
@@ -493,7 +525,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href=""
+                  <a href="https://www.twitter.com/" target="_blank"
                     ><img
                       src="/images/twitter.png"
                       alt="twitter logo"
@@ -502,7 +534,7 @@
                   /></a>
                 </li>
                 <li>
-                  <a href=""
+                  <a href="https://www.youtube.com/" target="_blank"
                     ><img
                       src="/images/youtube.png"
                       alt="youtube logo"
@@ -516,5 +548,11 @@
         </div>
       </div>
     </footer>
+
+    <div class="scroll-to-top">
+      <a href="#logo"
+        ><img class="up-arrow" src="/images/uparrow.png" alt="up arrow"
+      /></a>
+    </div>
   </body>
 </html>
