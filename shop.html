@@ -153,6 +153,86 @@
         width: 100%;
         position: absolute;
       }
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+      }
+      .footer {
+        background-color: #1d1d1d;
+        color: white;
+      }
+
+      footer div h4:after {
+        content: "";
+        display: block;
+        width: 40%;
+        height: 1px;
+        background: #fff;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+
+      .footer-content div {
+        max-width: 25%;
+        padding: 40px 0;
+      }
+
+      .footer-content__main {
+        font-size: 14px;
+      }
+
+      .footer-content__main p {
+        padding: 20px 0 5px;
+      }
+
+      .footer-copyright {
+        font-size: 13px;
+        padding-top: 0;
+      }
+
+      .footer-site-map ul li,
+      .footer-contact-us ul li,
+      .footer-visit-us ul li,
+      .footer-search ul li {
+        list-style-type: none;
+        padding: 5px 0;
+      }
+
+      .footer-site-map ul li:first-child,
+      .footer-contact-us ul li:first-child,
+      .footer-visit-us ul li:first-child,
+      .about__us-style__lists {
+        padding-top: 20px;
+      }
+
+      .footer-site-map ul li a,
+      .footer-contact-us ul li a,
+      .footer-search ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .search {
+        margin: 15px 0;
+      }
+
+      input[type="text"] {
+        padding: 10px 30px 10px 5px;
+        border: none;
+        outline: none;
+        color: white;
+        background-color: #2d2d2d;
+      }
+
+      input[type="text"]::placeholder {
+        color: white;
+      }
+
+      .nested-list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
     </style>
   </head>
   <header>
@@ -393,5 +473,107 @@
         style="border: 0"
       ></iframe>
     </div>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-content">
+          <div class="footer-content__main">
+            <img
+              src="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo-footer.png"
+              alt="logo"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              lacinia magna vel molestie faucibus.
+            </p>
+            <p class="footer-copyright">
+              &copy; Copyright, INT20_21_Gr22. All rights reserved
+            </p>
+          </div>
+          <div class="footer-site-map">
+            <h4>Site map</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a
+                  href="https://www.aims.ca/site/media/aims/2.pdf"
+                  target="_blank"
+                  >Info</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact-us">
+            <h4>Contact us</h4>
+            <ul>
+              <li>Call us</li>
+              <li><a href="tel:+1 23-456-789">+1 23-456-789</a></li>
+              <li>Mail us</li>
+              <li>
+                <a href="mailto: dreamhouse@gmail.com">dreamhouse@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-visit-us">
+            <h4>Visit us</h4>
+            <ul>
+              <li>Our location</li>
+              <li><address>113, New York, NY Sheram 113 254</address></li>
+            </ul>
+          </div>
+          <div class="footer-search">
+            <h4>Search, social links</h4>
+            <ul>
+              <li class="search">
+                <input type="text" placeholder="Search..." name="search" />
+              </li>
+
+              <ul class="nested-list">
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><img
+                      src="/images/facebook.png"
+                      alt="facebook logo"
+                      width="20px"
+                      height="20px"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                      src="/images/instagram.png"
+                      alt="instagram logo"
+                      width="20px"
+                      height="20px"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/" target="_blank"
+                    ><img
+                      src="/images/twitter.png"
+                      alt="twitter logo"
+                      width="20px"
+                      height="20px"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/" target="_blank"
+                    ><img
+                      src="/images/youtube.png"
+                      alt="youtube logo"
+                      width="20px"
+                      height="20px"
+                  /></a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
