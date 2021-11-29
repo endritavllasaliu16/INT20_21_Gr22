@@ -5,7 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Blog</title>
     <link rel="stylesheet" href="blog_grid.css" />
-
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
     <style>
       /* Dizajni i box-ave  */
       .container {
@@ -52,17 +57,15 @@
     </style>
   </head>
 
-  
-  
   <body>
     <!-- KODI per Header -->
     <header>
       <div class="wrapper">
         <div class="header">
-          <a href="/home.html">
+          <a href="/home.html" id="logo">
             <img
               alt="Logo company logo"
-              src="images/logo.PNG"
+              src="/images/logo.png"
               width="350"
               height="60"
             />
@@ -81,9 +84,7 @@
             </div>
             <div class="dropdown">
               <div class="dropdown__main">
-                <a href="projects.html"
-                  >PROJECTS <i class="fas fa-angle-down"></i
-                ></a>
+                <a href="#">PROJECTS <i class="fas fa-angle-down"></i></a>
               </div>
               <div class="dropdown-content">
                 <a href="#">PROJECT MASONRY</a>
@@ -98,12 +99,14 @@
             </div>
             <div class="dropdown">
               <div class="dropdown__main">
-                <a href="">BLOG <i class="fas fa-angle-down"></i></a>
+                <a href="blog_grid.html"
+                  >BLOG <i class="fas fa-angle-down"></i
+                ></a>
               </div>
               <div class="dropdown-content">
                 <a href="blog_grid.html">BLOG GRID</a>
                 <a href="blog_list.html">BLOG LIST</a>
-                <a href="#">BLOG POST</a>
+                <a href="blog_post.html">BLOG POST</a>
               </div>
             </div>
             <div class="dropdown">
@@ -111,13 +114,13 @@
                 <a href="shop.html">SHOP <i class="fas fa-angle-down"></i></a>
               </div>
               <div class="dropdown-content">
-                <a href="#">SHOP</a>
-                <a href="#">SHOP DETAIL</a>
+                <a href="shop.html">SHOP</a>
+                <a href="shopdetail.html">SHOP DETAIL</a>
               </div>
             </div>
             <div class="dropdown">
               <div class="dropdown__main">
-                <a href="#">CONTACT</a>
+                <a href="contact.html">CONTACT</a>
               </div>
             </div>
           </div>
@@ -125,9 +128,6 @@
       </div>
     </header>
 
-    
-    
-    
     <!-- Pjesa e zeze e fillimit, a.k.a Titulli i faqes , prezantimi -->
     <section class="Hyrja" style="background-image: url(images/geom.jpg)">
       <br /><br /><br />
@@ -141,9 +141,6 @@
     </section>
     <br /><br /><br />
 
-    
-    
-    
     <!-- Permbajtja brenda e faqes, qe eshte ba kryesisht me boxes -->
 
     <div class="container">
@@ -248,10 +245,6 @@
       </div>
     </div>
 
-    
-    
-    
-    
     <!-- Pjesa e fundit, para footerit, "Great Clients" me foto levizese. -->
 
     <table width="95%">
@@ -263,7 +256,16 @@
         </td>
 
         <td width="65%">
-          <marquee behavior="alternate"; width="100%"; onmouseover="this.stop()"; onmouseout="this.start()";>
+          <marquee
+            behavior="alternate"
+            ;
+            width="100%"
+            ;
+            onmouseover="this.stop()"
+            ;
+            onmouseout="this.start()"
+            ;
+          >
             <img src="images/partner2.jpg" height="120px" />
             <img src="images/partner5.jpg" height="120px" />
             <img src="images/partner3.jpg" height="120px" />
@@ -273,7 +275,107 @@
         </td>
       </tr>
     </table>
-  
-  
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer-content">
+          <div class="footer-content__main">
+            <img
+              src="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo-footer.png"
+              alt="logo"
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              lacinia magna vel molestie faucibus.
+            </p>
+            <p class="footer-copyright">
+              &copy; Copyright, INT20_21_Gr22. All rights reserved
+            </p>
+          </div>
+          <div class="footer-site-map">
+            <h4>Site map</h4>
+            <ul>
+              <li><a href="home.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li>
+                <a
+                  href="https://www.aims.ca/site/media/aims/2.pdf"
+                  target="_blank"
+                  >Info</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-contact-us">
+            <h4>Contact us</h4>
+            <ul>
+              <li>Call us</li>
+              <li><a href="tel:+1 23-456-789">+1 23-456-789</a></li>
+              <li>Mail us</li>
+              <li>
+                <a href="mailto: dreamhouse@gmail.com">dreamhouse@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-visit-us">
+            <h4>Visit us</h4>
+            <ul>
+              <li>Our location</li>
+              <li><address>113, New York, NY Sheram 113 254</address></li>
+            </ul>
+          </div>
+          <div class="footer-search">
+            <h4>Search, social links</h4>
+            <ul>
+              <li class="search">
+                <input type="text" placeholder="Search..." name="search" />
+              </li>
+
+              <ul class="nested-list">
+                <li>
+                  <a href="https://www.facebook.com/" target="_blank"
+                    ><img
+                      src="/images/facebook.png"
+                      alt="facebook logo"
+                      width="20px"
+                      height="20px"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/" target="_blank">
+                    <img
+                      src="/images/instagram.png"
+                      alt="instagram logo"
+                      width="20px"
+                      height="20px"
+                    />
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.twitter.com/" target="_blank"
+                    ><img
+                      src="/images/twitter.png"
+                      alt="twitter logo"
+                      width="20px"
+                      height="20px"
+                  /></a>
+                </li>
+                <li>
+                  <a href="https://www.youtube.com/" target="_blank"
+                    ><img
+                      src="/images/youtube.png"
+                      alt="youtube logo"
+                      width="20px"
+                      height="20px"
+                  /></a>
+                </li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
