@@ -1,0 +1,59 @@
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header,
+.navbar,
+.company-stats-info-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  padding: 10px 0;
+}
+
+.dropdown .dropdown__main a {
+  font-size: 14px;
+  text-decoration: none;
+  padding: 33px 20px;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  margin-top: 33px;
+  min-width: 160px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 3px 5px -1px #ccc;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 12px 16px;
+  color: black;
+  text-decoration: none;
+  text-align: left;
+  font-size: 12px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown__main a:hover,
+.dropdown-content a:hover {
+  color: rgb(73, 62, 224);
+}
