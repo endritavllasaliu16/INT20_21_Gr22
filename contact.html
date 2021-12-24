@@ -197,6 +197,11 @@
         align-items: center;
       }
     </style>
+    <script>
+        function send(){
+            alert('Message sent sucessfully!');
+        }
+    </script>
 </head>
 <header>
       <div class="wrapper">
@@ -343,7 +348,7 @@
         <textarea name="message" id="message" type="message" placeholder="Your Message" rows="5" cols="71"></textarea>
         <br><br>
         <!--Krijimi i butonit për të dërguar mesazhin-->
-        <button class="button" style="height: 40px;width: 543px;">Send Message</button>
+        <button class="button" style="height: 40px;width: 543px;" onclick="send()">Send Message</button>
 
     </form>
   </section>
