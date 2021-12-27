@@ -335,21 +335,21 @@
 
         <!--Email adresa e klientit dhe ajo se çfarë kërkon klienti-->
         <label for="email"></label>
-        <input type="email" id="email" name="email" placeholder="E-mail adress" required size="35" multiple>
+        <input type="email" id="email" name="email" placeholder="E-mail adress" required size="35" multiple autofocus>
         <label for="password"></label>
-        <input type="password" id="password" name="password" palaceholer="Password" required size="35" min="8">
+        <input type="password" id="password" name="password" palaceholer="Password" required size="35" min="8" autofocus>
         <br><br>
         <keygen name="rsaPublicKey" keytype="RSA">
-        <input type="text" name="usr_name" placeholder="Username" required size="68">
+        <input type="text" name="usr_name" placeholder="Username" required size="68" autofocus>
         <input type="submit">
         <br><br>
         <label form="subject"></label>
-        <input type="text" id="subject" name="subject" placeholder="Subject" required size="76">
+        <input type="text" id="subject" name="subject" placeholder="Subject" required size="76" autofocus>
         <br><br>
 
         <!--Pjesa nëse klienti ka për të shtuar diçka-->
         <label for="message" ></label>
-        <textarea name="message" id="message" type="message" placeholder="Your Message" required rows="5" cols="71"></textarea>
+        <textarea name="message" id="message" type="message" placeholder="Your Message" required rows="5" cols="71" autofocus></textarea>
         <br><br>
         <!--Krijimi i butonit për të dërguar mesazhin-->
         <button class="button" style="height: 40px;width: 543px;" onclick="send()">Send Message</button>
