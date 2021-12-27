@@ -356,6 +356,14 @@
         Add to Cart
       </button>
     </form>
+    
+    <form oninput="x.value=parseInt(a.value)+parseInt(b.value)">0
+      <input type="range" id="a" value="50">100
+      +<input type="number" id="b" value="50">
+      =<output id="myOutput" name="x" for="a b"></output>
+    </form>
+
+    <button class="button1"  style="height:25px; width:120px;" type="button" onclick="myFunction()">Try it</button>
 
     <div class="responsive-map">
       <iframe
