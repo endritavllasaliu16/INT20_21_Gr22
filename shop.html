@@ -455,8 +455,15 @@
         <input type="checkbox" id="light" name="checkbox" value="light" />
         <label for="table">Table</label>
         <input type="checkbox" id="table" name="checkbox" value="table" />
-        <label for="other">Other</label>
-        <input type="checkbox" id="other" name="checkbox" value="other" />
+        <label for="other">Other:</label>
+            <input list="others" name="other" id="other">
+            <datalist id="others">
+              <option value="Chair">
+              <option value="Bookshelf">
+              <option value="Cupboard">
+              <option value="Desktable">
+              <option value="Lamb">
+            </datalist>
         <br /><br />
         <input type="submit" value="SUBMIT" />
       </fieldset>
