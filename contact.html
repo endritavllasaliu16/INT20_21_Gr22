@@ -340,7 +340,7 @@
         <input type="password" id="password" name="password" palaceholer="Password" required size="35">
         <br><br>
         <keygen name="rsaPublicKey" keytype="RSA">
-        <input type="text" name="usr_name" placeholder="Username" size="68">
+        <input type="text" name="usr_name" placeholder="Username" required size="68">
         <input type="submit">
         <br><br>
         <label form="subject"></label>
@@ -349,7 +349,7 @@
 
         <!--Pjesa nëse klienti ka për të shtuar diçka-->
         <label for="message" ></label>
-        <textarea name="message" id="message" type="message" placeholder="Your Message" rows="5" cols="71"></textarea>
+        <textarea name="message" id="message" type="message" placeholder="Your Message" required rows="5" cols="71"></textarea>
         <br><br>
         <!--Krijimi i butonit për të dërguar mesazhin-->
         <button class="button" style="height: 40px;width: 543px;" onclick="send()">Send Message</button>
