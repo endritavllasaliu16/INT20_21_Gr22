@@ -198,6 +198,53 @@
       }
     </style>
     <script>
+        function validateForm() {
+        var name = document.forms["myForm"]["name"];
+        var email = document.forms["myForm"]["email"];
+        var password = document.forms["myForm"]["password"];
+        var username = document.forms["myForm"]["usr_name"];
+        var what = document.forms["myForm"]["subject"];
+        var message = document.forms["myForm"]["message"];
+  
+        if (name.value == "") {
+            window.alert("Please enter your name.");
+            name.focus();
+            return false;
+        }
+  
+        if (email.value == "") {
+            window.alert("Please enter your email.");
+            email.focus();
+            return false;
+        }
+  
+        if (password.value == "") {
+            window.alert(
+              "Please enter a password.");
+            password.focus();
+            return false;
+        }
+  
+        if (username.value == "") {
+            window.alert("Please enter your username.");
+            username.focus();
+            return false;
+        }
+  
+        if (what.value=="") {
+            window.alert("Please enter subject.");
+            what.focus();
+            return false;
+        }
+  
+        if (message.value=="") {
+            alert("Please enter your message.");
+            message.focus();
+            return false;
+        }
+  
+        return true;
+    }
         function send(){
             alert('Message sent sucessfully!');
         }
