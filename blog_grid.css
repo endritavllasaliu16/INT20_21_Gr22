@@ -136,6 +136,7 @@
   font-size: 20px;
   color: slategray;
   padding-bottom: 10px;
+  word-wrap: normal;
 }
 
 .butoni {
