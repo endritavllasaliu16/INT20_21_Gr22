@@ -19,19 +19,6 @@
     <link rel="stylesheet" href="/css/home_image.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
-    <script>
-      function exampleFunction(parameter) {
-        document.getElementById("exampleElement").innerHTML = parameter;
-      }
-      function selectText(string) {
-        const newString = string + ", best consmuator!";
-        setSelectedText(newString);
-      }
-
-      function setSelectedText(text) {
-        document.getElementById("selectedText").innerHTML = text;
-      }
-    </script>
   </head>
   <body>
     <header>
@@ -145,6 +132,59 @@
                   width="500"
                 />
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="wrapper">
+          <h3 class="about_us__article-heading" style="margin-top: 40px">
+            Meet our team
+          </h3>
+          <div class="team_planning">
+            <div>
+              <canvas id="textCanvas" width="300" height="100">
+                Your browser does not support the canvas element.
+              </canvas>
+              <br />
+              <canvas id="triangleCanvas" width="250" height="150">
+                Your browser does not support the HTML5 canvas tag.</canvas
+              >
+              <canvas id="squareCanvas" width="180" height="150"></canvas>
+              <br />
+              <canvas id="circleCanvas" width="350" height="180"></canvas>
+              <br />
+              <canvas
+                id="myCanvas"
+                width="200"
+                height="100"
+                style="border: 1px solid #d3d3d3"
+              >
+                Your browser does not support the HTML5 canvas tag.</canvas
+              >
+            </div>
+            <div>
+              <h1 id="image_title" style="text-align: center; padding: 10px">
+                Team
+              </h1>
+              <img
+                src="images/teamwork.jpg"
+                alt="Black Image"
+                id="image"
+                width="450px"
+                height="500px"
+                style="display: block"
+              />
+              <input
+                type="hidden"
+                name="image_number"
+                value="0"
+                id="image_number"
+              />
+            </div>
+            <div>
+              <h1>SVG</h1>
             </div>
           </div>
         </div>
@@ -563,5 +603,7 @@
       /></a>
     </div>
   </body>
-  <script src="js/drop.js"></script>
+  <script src="js/drag_drop.js"></script>
+  <script src="js/teamWork.js"></script>
+  <script src="js/canvas.js"></script>
 </html>
