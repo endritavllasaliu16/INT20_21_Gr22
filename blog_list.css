@@ -56,9 +56,18 @@
   .dropdown-content a:hover {
     color: rgb(73, 62, 224);
   }
+
+
+
   
   /* Pjesa e prezantimit te faqes Blog Grid      */
   
+  #canvas1{
+    position: relative;
+    width: 3000px;
+    height: 20px;
+   
+  }
   .nalt {
     text-align: center;
     font-size: 50px;
