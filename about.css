@@ -172,6 +172,7 @@
     column-count: 2;
     column-gap: 30px;
     column-rule: 1px solid #808080;
+    word-wrap:break-word;
 }
 
 /* Meet our team, overlay tekst mbi foto edhe efekti hover */
