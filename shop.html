@@ -234,6 +234,25 @@
         align-items: center;
       }
     </style>
+    <script>
+      function validChk() {
+		      var chkBox = document.getElementsByName('checkbox[]');
+		      var lenChkBox = chkBox.length;
+		      var valid=0;
+		      for(var i=0;i<lenChkBox;i++) {
+			    if(checbox[i].checked==true) {
+				  valid=1;
+				  break;
+			   }
+		    }
+		    if(valid==0) {
+			  msg='Please select atleast one book';
+			  alert(msg);
+			  return false;
+		  }
+		    return true;
+	    }
+    </script>
   </head>
   <header>
     <div class="wrapper">
