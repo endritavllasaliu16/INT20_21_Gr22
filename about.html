@@ -144,8 +144,24 @@
     </header>
 
 
-    <canvas id="canvas1"></canvas>
-    <script src="Project_JS.js"></script>
+    
+
+    <canvas id="canvas1">Your browser does not support the HTML5 canvas tag.</canvas>
+     <script>
+              var c = document.getElementById("canvas1");
+              var ctx = c.getContext("2d");
+
+              var grd = ctx.createRadialGradient(75,50,5,90,60,100);
+              grd.addColorStop(0,"gray");
+              grd.addColorStop(1,"black");
+
+               ctx.fillStyle = grd;
+               ctx.fillRect(10,10,150,80);
+     </script>
+    
+
+
+
 
     <!-- Fillimi i faqes "About", pjesa me background me foto te zeze, ku brenda seksionit gjenden dy div-a-->
     <section class="Hyrja" style="background-image: url(images/geom.jpg)">
@@ -163,7 +179,7 @@
     <!-- 4 squares me permbajtje te ndryshme -->
 
     <div id="squarecontainer">
-      <div id="square1">
+      <div id="square1" width= 60%>
         <div class="headtitle">
           <h2 class="about_us__article-heading">ABOUT US</h2>
           <p class="article-title">
@@ -184,7 +200,7 @@
           and engineers, we advocate for the people who are served by the spaces
           we design. We engage with our clients on a personal level, as both
           institutions and people, so we can help them do better what they do
-          best.
+          best. 
         </p>
       </div>
 
