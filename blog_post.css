@@ -58,6 +58,13 @@
   }
   
   /* Pjesa e prezantimit te faqes Blog Post      */
+
+  #canvas1{
+    position: relative;
+    width: 3000px;
+    height: 20px;
+   
+  }
   
   .nalt {
     text-align: center;
