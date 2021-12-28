@@ -397,3 +397,8 @@
   margin-top: 10px;
   background: #dadada;
 }
+
+.team_planning {
+  display: flex;
+  justify-content: space-between;
+}
