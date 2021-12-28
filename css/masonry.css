@@ -1,4 +1,4 @@
-img {
+.masonry_images {
   max-width: 100%;
   height: auto;
   vertical-align: middle;
@@ -19,6 +19,7 @@ img {
 }
 
 .grid-wrapper {
+  margin: 50px;
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -34,4 +35,25 @@ img {
 .grid-wrapper .big {
   grid-column: span 2;
   grid-row: span 2;
+}
+
+.grid-wrapper .wide :hover {
+  transform: skew(10deg, 10deg);
+}
+.grid-wrapper .tall :hover {
+  transform: translate(12px, 50px);
+}
+.grid-wrapper .big :hover {
+  transform: scale(1, 0.5);
+}
+
+.rotate_image_X :hover {
+  transform: rotateX(3.142rad);
+}
+.rotate_image_Y :hover {
+  transform: rotateY(3.142rad);
+}
+
+.transorm_images_3d :hover {
+  transform: rotate3d(0.5, -0.866, 0, 15deg) rotate(1deg);
 }
