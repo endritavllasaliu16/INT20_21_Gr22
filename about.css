@@ -167,8 +167,11 @@
 
 /* Teksti i brendshem me ngjyre ma te leht  */
 .font2 {
-  font-size: 17px;
-  color: #808080;
+    font-size: 17px;
+    color: #808080;
+    column-count: 2;
+    column-gap: 30px;
+    column-rule: 1px solid #808080;
 }
 
 /* Meet our team, overlay tekst mbi foto edhe efekti hover */
