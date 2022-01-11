@@ -13,6 +13,7 @@
       href="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo-shortcut.png"
       type="image/x-icon"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <style>
         * {
   font-family: "Montserrat", sans-serif;
@@ -248,6 +249,55 @@
         function send(){
             alert('Message sent sucessfully!');
         }
+        //focus()//
+        $(document).ready(function(){
+        $("#yourname").focus(function(){
+          $(this).css("background-color","lightgray");
+        });
+        $("#yourname").blur(function(){
+          $(this).css("background-color","beige");
+        });
+      });
+      $(document).ready(function(){
+        $("#email").focus(function(){
+          $(this).css("background-color","lightgray");
+        });
+        $("#email").blur(function(){
+          $(this).css("background-color","beige");
+        });
+      });
+      $(document).ready(function(){
+        $("#password").focus(function(){
+          $(this).css("background-color","lightgray");
+        });
+        $("#password").blur(function(){
+          $(this).css("background-color","beige");
+        });
+      });
+      $(document).ready(function(){
+        $("#subject").focus(function(){
+          $(this).css("background-color","lightgray");
+        });
+        $("#subject").blur(function(){
+          $(this).css("background-color","beige");
+        });
+      });
+      $(document).ready(function(){
+        $("#yourmessage").focus(function(){
+          $(this).css("background-color","lightgray");
+        });
+        $("#yourmessage").blur(function(){
+          $(this).css("background-color","beige");
+        });
+      });
+      $(document).ready(function(){
+        $("#usr_name").focus(function(){
+          $(this).css("background-color","lightgray");
+        });
+        $("#usr_name").blur(function(){
+          $(this).css("background-color","beige");
+        });
+      });
     </script>
 </head>
 <header>
