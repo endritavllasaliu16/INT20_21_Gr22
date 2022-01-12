@@ -190,17 +190,17 @@
       }
     </style>
     <script>
-  function myFunction() {
-    var x = document.getElementById("myOutput").name;
-    document.getElementById("demo").innerHTML = x;
-  }
+      function myFunction() {
+        var x = document.getElementById("myOutput").name;
+        document.getElementById("demo").innerHTML = x;
+      }
       //slideToggle()//
-  $(document).ready(function(){
-  $("#flip").click(function(){
-    $("#panel").slideToggle("slow");
-  });
-});
-  </script>
+      $(document).ready(function () {
+        $("#flip").click(function () {
+          $("#panel").slideToggle("slow");
+        });
+      });
+    </script>
   </head>
   <header>
     <div class="wrapper">
@@ -227,11 +227,13 @@
           </div>
           <div class="dropdown">
             <div class="dropdown__main">
-              <a href="#">PROJECTS <i class="fas fa-angle-down"></i></a>
+              <a href="masonry.html"
+                >PROJECTS <i class="fas fa-angle-down"></i
+              ></a>
             </div>
             <div class="dropdown-content">
-              <a href="#">PROJECT MASONRY</a>
-              <a href="#">PROJECT GRID</a>
+              <a href="masonry.html">PROJECT MASONRY</a>
+              <a href="grid.html">PROJECT GRID</a>
               <a href="#">PROJECT DETAIL</a>
             </div>
           </div>
@@ -324,37 +326,37 @@
       <br />
       <p style="color: grey">
         Hand Crafted in England. Upholstered in a stunning deep blue velvet, our
-        generously proportioned &quot;Bromley chair&quot; is both elegant and timeless.<span id="points">...</span>
-        <span id="moreText">It&apos;s
-        welcoming stance will encourage you to curl up with a favourite read,
-        whilst it&#39;s curved wing back and plump seat will cradle you in comfort
-        for your afternoon snooze. Style with our Elbert buttoned footstool for
-        the perfect pairing in your living area or boudoir, a special chair for
-          that special place in your home. The front legs on our &quot;Bromley chair&quot;…</span>
+        generously proportioned &quot;Bromley chair&quot; is both elegant and
+        timeless.<span id="points">...</span>
+        <span id="moreText"
+          >It&apos;s welcoming stance will encourage you to curl up with a
+          favourite read, whilst it&#39;s curved wing back and plump seat will
+          cradle you in comfort for your afternoon snooze. Style with our Elbert
+          buttoned footstool for the perfect pairing in your living area or
+          boudoir, a special chair for that special place in your home. The
+          front legs on our &quot;Bromley chair&quot;…</span
+        >
       </p>
-      <br>
-        <button onclick="toggleText()" id="textButton">
-          Show More
-      </button>
-      <br>
+      <br />
+      <button onclick="toggleText()" id="textButton">Show More</button>
+      <br />
       <script>
         function toggleText() {
-            var points = document.getElementById("points");
-            var showMoreText =document.getElementById("moreText");
-            var buttonText =document.getElementById("textButton");
-            if (points.style.display === "none") {
-               showMoreText.style.display = "none";
-                points.style.display = "inline";
-                buttonText.innerHTML = "Show More";
-            }
-            else {
-                showMoreText.style.display = "inline";
-                points.style.display = "none";
-                buttonText.innerHTML = "Show Less";
-            }
+          var points = document.getElementById("points");
+          var showMoreText = document.getElementById("moreText");
+          var buttonText = document.getElementById("textButton");
+          if (points.style.display === "none") {
+            showMoreText.style.display = "none";
+            points.style.display = "inline";
+            buttonText.innerHTML = "Show More";
+          } else {
+            showMoreText.style.display = "inline";
+            points.style.display = "none";
+            buttonText.innerHTML = "Show Less";
+          }
         }
-    </script>
-      <br>
+      </script>
+      <br />
       <p style="color: darkblue" id="flip"><b>Category:</b></p>
       <p style="color: grey" id="panel">Interior/ Arm</p>
     </div>
