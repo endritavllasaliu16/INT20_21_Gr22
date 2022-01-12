@@ -13,7 +13,7 @@
       href="http://specthemes.com/dreamhouse-template/dreamhouse/img/logos/logo-shortcut.png"
       type="image/x-icon"
     />
-	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <style>
       * {
@@ -237,73 +237,73 @@
     </style>
     <script>
       function validChk() {
-		      var chkBox = document.getElementsByName('checkbox[]');
-		      var lenChkBox = chkBox.length;
-		      var valid=0;
-		      for(var i=0;i<lenChkBox;i++) {
-			    if(checbox[i].checked==true) {
-				  valid=1;
-				  break;
-			   }
-		    }
-		    if(valid==0) {
-			  msg='Please select atleast one book';
-			  alert(msg);
-			  return false;
-		  }
-		    return true;
-	    }
-	    function validation() {
-    var radios = document.getElementsByName("radio");
-    var formValid = false;
+        var chkBox = document.getElementsByName("checkbox[]");
+        var lenChkBox = chkBox.length;
+        var valid = 0;
+        for (var i = 0; i < lenChkBox; i++) {
+          if (checbox[i].checked == true) {
+            valid = 1;
+            break;
+          }
+        }
+        if (valid == 0) {
+          msg = "Please select atleast one book";
+          alert(msg);
+          return false;
+        }
+        return true;
+      }
+      function validation() {
+        var radios = document.getElementsByName("radio");
+        var formValid = false;
 
-    var i = 0;
-    while (!formValid && i < radios.length) {
-        if (radios[i].checked) formValid = true;
-        i++;        
-    }
+        var i = 0;
+        while (!formValid && i < radios.length) {
+          if (radios[i].checked) formValid = true;
+          i++;
+        }
 
-    if (!formValid) alert("Must check some option!");
-    return formValid;
-   }
-	    //mouseenter()-View Product//
-      $(document).ready(function(){
-        $(".button1").mouseenter(function(){
+        if (!formValid) alert("Must check some option!");
+        return formValid;
+      }
+      //mouseenter()-View Product//
+      $(document).ready(function () {
+        $(".button1").mouseenter(function () {
           alert("View Product");
         });
       });
-      $(document).ready(function(){
-        $(".button2").mouseenter(function(){
+      $(document).ready(function () {
+        $(".button2").mouseenter(function () {
           alert("View Product");
         });
       });
-      $(document).ready(function(){
-        $(".button3").mouseenter(function(){
+      $(document).ready(function () {
+        $(".button3").mouseenter(function () {
           alert("View Product");
         });
       });
-      $(document).ready(function(){
-        $(".button4").mouseenter(function(){
+      $(document).ready(function () {
+        $(".button4").mouseenter(function () {
           alert("View Product");
         });
       });
-      $(document).ready(function(){
-        $(".button5").mouseenter(function(){
+      $(document).ready(function () {
+        $(".button5").mouseenter(function () {
           alert("View Product");
         });
       });
-      $(document).ready(function(){
-        $(".button6").mouseenter(function(){
+      $(document).ready(function () {
+        $(".button6").mouseenter(function () {
           alert("View Product");
         });
       });
-      $(document).ready(function(){
-        $(".button7").mouseenter(function(){
+      $(document).ready(function () {
+        $(".button7").mouseenter(function () {
           alert("View Product");
         });
       });
-      $(document).ready(function(){
-        $(".button8").mouseenter(function(){
+      $(document).ready(function () {
+        $(".button8").mouseenter(function () {
           alert("View Product");
         });
       });
@@ -334,11 +334,13 @@
           </div>
           <div class="dropdown">
             <div class="dropdown__main">
-              <a href="#">PROJECTS <i class="fas fa-angle-down"></i></a>
+              <a href="masonry.html"
+                >PROJECTS <i class="fas fa-angle-down"></i
+              ></a>
             </div>
             <div class="dropdown-content">
-              <a href="#">PROJECT MASONRY</a>
-              <a href="#">PROJECT GRID</a>
+              <a href="masonry.html">PROJECT MASONRY</a>
+              <a href="grid.html">PROJECT GRID</a>
               <a href="#">PROJECT DETAIL</a>
             </div>
           </div>
@@ -394,7 +396,11 @@
       <p>Soft Chair</p>
       <p><b>1.900 &euro;</b></p>
       <form>
-        <button class="button1" style="height: 40px; width: 200px" formnovalidate="formnovalidate">
+        <button
+          class="button1"
+          style="height: 40px; width: 200px"
+          formnovalidate="formnovalidate"
+        >
           View Product
         </button>
       </form>
@@ -410,7 +416,11 @@
       <p>Coffee Table</p>
       <p><b>1.100 &euro;</b></p>
       <form>
-        <button class="button2" style="height: 40px; width: 200px" formnovalidate="formnovalidate">
+        <button
+          class="button2"
+          style="height: 40px; width: 200px"
+          formnovalidate="formnovalidate"
+        >
           View Product
         </button>
       </form>
@@ -426,7 +436,11 @@
       <p>Night Light</p>
       <p><b>870 &euro;</b></p>
       <form>
-        <button class="button3" style="height: 40px; width: 200px" formnovalidate="formnovalidate">
+        <button
+          class="button3"
+          style="height: 40px; width: 200px"
+          formnovalidate="formnovalidate"
+        >
           View Product
         </button>
       </form>
@@ -442,7 +456,11 @@
       <p>Desk Table</p>
       <p><b>1.400 &euro;</b></p>
       <form>
-        <button class="button4" style="height: 40px; width: 200px" formnovalidate="formnovalidate">
+        <button
+          class="button4"
+          style="height: 40px; width: 200px"
+          formnovalidate="formnovalidate"
+        >
           View Product
         </button>
       </form>
@@ -458,7 +476,11 @@
       <p>Soft Chair</p>
       <p><b>1.690 &euro;</b></p>
       <form>
-        <button class="button5" style="height: 40px; width: 200px" formnovalidate="formnovalidate">
+        <button
+          class="button5"
+          style="height: 40px; width: 200px"
+          formnovalidate="formnovalidate"
+        >
           View Product
         </button>
       </form>
@@ -474,7 +496,11 @@
       <p>Coffee Table</p>
       <p><b>1.500 &euro;</b></p>
       <form>
-        <button class="button6" style="height: 40px; width: 200px" formnovalidate="formnovalidate">
+        <button
+          class="button6"
+          style="height: 40px; width: 200px"
+          formnovalidate="formnovalidate"
+        >
           View Product
         </button>
       </form>
@@ -490,7 +516,11 @@
       <p>Night Light</p>
       <p><b>790 &euro;</b></p>
       <form>
-        <button class="button7" style="height: 40px; width: 200px" formnovalidate="formnovalidate">
+        <button
+          class="button7"
+          style="height: 40px; width: 200px"
+          formnovalidate="formnovalidate"
+        >
           View Product
         </button>
       </form>
@@ -506,7 +536,11 @@
       <p>Desk Table</p>
       <p><b>1.750 &euro;</b></p>
       <form>
-        <button class="button8" style="height: 40px; width: 200px" formnovalidate="formnovalidate">
+        <button
+          class="button8"
+          style="height: 40px; width: 200px"
+          formnovalidate="formnovalidate"
+        >
           View Product
         </button>
       </form>
@@ -530,16 +564,22 @@
         <label for="table">Table</label>
         <input type="checkbox" id="table" name="checkbox" value="table" />
         <label for="other">Other:</label>
-            <input list="others" name="other" id="other" formnovalidate="formnovalidate">
-            <datalist id="others">
-              <option value="Chair">
-              <option value="Bookshelf">
-              <option value="Cupboard">
-              <option value="Desktable">
-              <option value="Lamb">
-            </datalist>
+        <input
+          list="others"
+          name="other"
+          id="other"
+          formnovalidate="formnovalidate"
+        />
+        <datalist id="others">
+          <option value="Chair"></option>
+          <option value="Bookshelf"></option>
+          <option value="Cupboard"></option>
+          <option value="Desktable"></option>
+          <option value="Lamb"></option>
+        </datalist>
+
         <br /><br />
-        <input type="submit" value="SUBMIT" onclick="return validChk()">
+        <input type="submit" value="SUBMIT" onclick="return validChk()" />
       </fieldset>
     </form>
 
