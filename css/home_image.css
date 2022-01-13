@@ -155,7 +155,8 @@
   background: url(/images/creative-art-plans.png) no-repeat;
 }
 
-.medium__button-black:hover:after {
+.medium__button-black:hover:after,
+.draggable_button:hover:after {
   content: " →";
 }
 
@@ -263,8 +264,16 @@
   height: 3px;
   background-color: #ececec;
 }
-
-.medium__button {
+#btn1,
+#b1 {
+  margin-top: 10px;
+}
+.medium__button,
+.draggable_button,
+#btn1,
+#btn2,
+#btn3,
+#b1 {
   padding: 12px 10px;
   font-size: 12px;
   font-weight: 500;
@@ -272,13 +281,30 @@
   border: none;
   border-radius: 50px;
 }
+#btn2 {
+  margin-left: 20px;
+}
+#btn2,
+#btn3 {
+  margin-top: 5px;
+}
 
-.medium__button-black {
+.medium__button-black,
+.draggable_button,
+#btn1,
+#btn2,
+#btn3,
+#b1 {
   background: #2d2d2d;
 }
 
 .medium__button-black:hover,
-.medium__button-lightsalmon__border:hover {
+.draggable_button:hover,
+.medium__button-lightsalmon__border:hover,
+#btn1:hover,
+#btn2:hover,
+#btn3:hover,
+#b1:hover {
   background: #bda87f;
   color: #fff;
 }
@@ -294,7 +320,24 @@
   border: 3px solid #bda87f;
   background-color: white;
 }
+input[type="text"] {
+  padding: 10px 30px 10px 5px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #2d2d2d;
+}
 
+input[type="text"]::placeholder {
+  color: white;
+}
+
+.nested-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .company-stats {
   background: url(http://specthemes.com/dreamhouse-template/dreamhouse/img/bg/bg4.jpg)
     no-repeat center center fixed;
