@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="/css/home_image.css" />
     <link rel="stylesheet" href="/css/header.css" />
     <link rel="stylesheet" href="/css/footer.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <header>
@@ -109,16 +110,17 @@
                   width="500"
                 />
                 <button
-                  class="medium__button medium__button-black"
-                  onclick="alertDraggable()"
+                  class="draggable_button"
+                  value="Hello! You can drag and drop this image"
                 >
                   Try it
                 </button>
-
                 <script>
-                  function alertDraggable() {
-                    alert("Hello! You can drag and drop this image");
-                  }
+                  $(document).ready(function () {
+                    $(".draggable_button").click(function () {
+                      alert($(".draggable_button").val());
+                    });
+                  });
                 </script>
               </div>
             </div>
@@ -266,8 +268,7 @@
               lacinia magna vel molestie faucibus. Donec auctor et urnaLorem
               ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
               magna vel molestie faucibus. Cras lacinia magna vel molestie
-              faucibus. Donec auctor et urnaLorem ipsum dolor sit amet,
-              consectetur adipiscing elit.
+              faucibus.
             </p>
             <dl class="data__list" style="padding: 10px 0">
               <dt>
@@ -280,11 +281,19 @@
                 >
               </dd>
             </dl>
+            <button id="btn2">Add item</button>
+            <button id="btn3">Remove item</button>
+            <script>
+              $(document).ready(function () {
+                $("#btn2").click(function () {
+                  $("dd").append("<dt>Appended item</dt>");
+                });
+                $("#btn3").click(function () {
+                  $(".data__list dt:last-child").remove();
+                });
+              });
+            </script>
 
-            <p class="about_us__article-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              lacinia magna vel molestie faucibus.
-            </p>
             <div class="about_us__article-info">
               <div class="about_us__article-info-house">
                 <h4>Your dream house</h4>
@@ -324,14 +333,17 @@
               ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
               magna vel molestie faucibus.
             </p>
-            <div
-              id="exampleElement"
-              onClick="exampleFunction('after clicking')"
-            ></div>
-            <div id="selectedText">No text selected</div>
-            <button onClick="selectText('many logic')">many logic</button>
-            <button onClick="selectText('much website')">much website</button>
-            <button onClick="selectText('very code')">very code</button>
+            <p id="test1">Cras lacinia magna vel molestie faucibus.</p>
+
+            <button id="btn1">Set Text</button>
+
+            <script>
+              $(document).ready(function () {
+                $("#btn1").click(function () {
+                  $("#test1").text(" Cras lacinia");
+                });
+              });
+            </script>
           </aside>
         </article>
 
@@ -395,6 +407,41 @@
               ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
               magna vel molestie faucibus.
             </p>
+
+            <input
+              type="text"
+              id="t1"
+              placeholder="Choose an interior design"
+            />
+            <br />
+
+            <input type="button" id="b1" value="click me" onclick="pp()" />
+            <br />
+            <script>
+              function pp() {
+                var c = parseInt(document.all.t1.value);
+                try {
+                  switch (c) {
+                    case 1:
+                      throw "Minimalist";
+                      break;
+                    case 2:
+                      throw "Traditional";
+                      break;
+                    case 3:
+                      throw "Transitional";
+                      break;
+                    case 4:
+                      throw "Rustic";
+                      break;
+                    default:
+                      throw "The real error";
+                  }
+                } catch (error) {
+                  alert(error);
+                }
+              }
+            </script>
           </aside>
         </article>
 
