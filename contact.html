@@ -440,6 +440,26 @@
         </tr>
     </table>
     
+    <!--Geolocation-->
+  <button onclick="getLocation()" class="position">Your Position</button>
+  <p id="point"></p>
+
+  <script>
+    var x = document.getElementById("point");
+    
+    function getLocation() {
+      if (navigator.geolocation) {
+        navigator.geolocation.watchPosition(showPosition);
+      } else { 
+        x.innerHTML = "Geolocation is not supported by this browser.";
+      }
+    }   
+    function showPosition(position) {
+        x.innerHTML="Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+    }
+    </script>
+    
     <!--Krijimi i formave për klientët-->
     <form action="" autocomplete="on" name="myForm" onsubmit="return validateForm()">
         <!--Emri i klientit-->
