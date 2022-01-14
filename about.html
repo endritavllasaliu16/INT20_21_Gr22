@@ -11,6 +11,51 @@
       integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
       crossorigin="anonymous"
     />
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+
+
+    <!-- Kodi me JQuery per hide and show -->
+     <script>
+          $(document).ready(function(){
+          $("#hide").click(function(){
+          $("#paragraf2").hide();
+          });
+          $("#show").click(function(){
+          $("#paragraf2").show();
+          });
+          });
+     </script>
+  
+  <!-- Kodi ne JQuery per hide and show me callback -->
+      <script>
+           $(document).ready(function(){
+          
+          $(".hide-btn").click(function(){
+          $("#paragraf").hide("slow", function(){
+          
+          alert("The hide effect is completed.");
+          });
+          });
+          
+          $(".show-btn").click(function(){
+          $("#paragraf").show("slow", function(){
+              
+          alert("The show effect is completed.");
+              });
+            });
+          });
+       </script>
+
+
+
+
+
+    
     <style>
       /* Fotoja ne square 2 */
       .frame {
@@ -93,17 +138,19 @@
               </div>
               <div class="dropdown-content">
                 <a href="home.html">HOME SLIDER</a>
-                <a href="#">HOME IMAGE</a>
-                <a href="#">HOME VIDEO</a>
+                <a href="home_image.html">HOME IMAGE</a>
+                <a href="home_video_audio.html">HOME VIDEO</a>
               </div>
             </div>
             <div class="dropdown">
               <div class="dropdown__main">
-                <a href="#">PROJECTS <i class="fas fa-angle-down"></i></a>
+                <a href="masonry.html"
+                  >PROJECTS <i class="fas fa-angle-down"></i
+                ></a>
               </div>
               <div class="dropdown-content">
-                <a href="#">PROJECT MASONRY</a>
-                <a href="#">PROJECT GRID</a>
+                <a href="masonry.html">PROJECT MASONRY</a>
+                <a href="grid.html">PROJECT GRID</a>
                 <a href="#">PROJECT DETAIL</a>
               </div>
             </div>
@@ -144,7 +191,8 @@
     </header>
 
 
-    
+
+    <!-- Vija nen navbar e bere me canvas -->
 
     <canvas id="canvas1">Your browser does not support the HTML5 canvas tag.</canvas>
      <script>
@@ -163,7 +211,7 @@
 
 
 
-    <!-- Fillimi i faqes "About", pjesa me background me foto te zeze, ku brenda seksionit gjenden dy div-a-->
+    <!-- Fillimi i faqes "About", pjesa me background me foto te zeze -->
     <section class="Hyrja" style="background-image: url(images/geom.jpg)">
       <br /><br /><br />
       <div class="nalt">
@@ -175,6 +223,9 @@
       </div>
     </section>
     <br /><br /><br />
+
+
+
 
     <!-- 4 squares me permbajtje te ndryshme -->
 
@@ -225,15 +276,15 @@
       </div>
 
       <div id="square4">
-        <svg height="200" width="1000">
-          <ellipse cx="700" cy="110" rx="220" ry="50" style="fill:#ccbd99" stroke="#bba677" />
-          <ellipse cx="450" cy="70" rx="190" ry="40" style="fill:#ddd3bb" stroke="#ccbd99" />
-          <ellipse cx="200" cy="35" rx="170" ry="30" style="fill:#eee8dd" stroke="#ddd3bb" />
-          Sorry, your browser does not support inline SVG. 
-        </svg>
-        <br><br><br><br>
-      </div>
+       
+      
     </div>
+
+
+
+
+
+
 
     <!-- Rreshti me fotot e punëtorve  -->
 
@@ -321,8 +372,131 @@
         </div>
       </div>
     </div>
+    <br><br><br><br><br><br>
 
-    <!-- Pjesa ku i tregon special prices e ndertume me 4 boxes  -->
+   
+    
+
+
+
+
+  
+<!-- Pjesa ku tregohet "first steps" te nje projekti dhe "last steps", ku jane perdor hide and show, po ashtu hide and show me callback -->
+    
+<div class="div1">
+      <div class="section-heading" style="margin-left: 150px; margin-right: 150px;" > 
+          <h2 class="about_us__article-heading">First Step</h2>
+          <p class="article-title">Submittals and Drawings</p>
+          
+          <p class="parag"> If the text below is disturbing, you can always hide it or show it.</p>
+          <br>
+          <!-- Butonat -->
+                  <div class="buttons">
+                         <button type="button" class="hide-btn">Hide it</button> 
+                         <button type="button" class="show-btn">Show it</button>
+                  </div><br>
+
+              <p class="font2_" id="paragraf">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus. Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus.
+              <br><br> Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus. Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus.Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus.</p>
+      
+              <!-- Fotot e sketchs -->
+             <div class="first_sketchs" style="width: 100%;">
+              <img
+                  src="images/h-sketch-1.jpg"
+                  alt="Sketchs"
+                  style="width: 50%; border-radius: 15px ;"
+              />
+               <img
+                src="images/h-sketch-2.jpg"
+                alt="Sketchs"
+                style="width: 50%; border-radius: 15px;"
+              />
+             </div>
+       </div>
+  </div>
+
+
+<div class="div2">
+      <div class="section-heading" style="margin-left: 150px; margin-right: 150px;"> 
+          <h2 class="about_us__article-heading">The final step</h2>
+          <p class="article-title">Final Inspections</p>
+          <p class="parag"> If the text below is disturbing, you can always hide it or show it.</p>
+          <br>
+         <!-- Butonat -->
+           <div class="buttons">
+            <button id="hide">Hide</button>
+            <button id="show">Show</button>
+           </div><br>
+      
+          <p class="font2_" id="paragraf2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus. Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus.
+          <br><br>Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus. Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus.Cras lacinia magna vel molestie faucibus. Donec auctor et urnaLorem ipsum dolor sit amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia magna vel molestie faucibus.</p> <br><br>
+      
+          <!-- Fotot e hapit perfundimtar -->
+          <div class="first_sketchs" style="width: 100%;">
+          <img
+          src="images/s-detail-1.jpg"
+          alt="Sketchs"
+          style="width: 50%; margin: 30px; border-radius: 15px; "
+          />
+          <img
+          src="images/s-detail-2.jpg"
+          alt="Sketchs"
+          style="width: 50%; margin: 30px; border-radius: 15px;"
+          />
+          </div><br><br>
+       </div>
+</div>
+<br><br><br><br>
+
+    
+
+
+<!-- Pjesa e thanjeve, qe eshte me marquee, me background fixed -->
+<section class="quotes">
+     <marquee
+      behavior="alternate"
+      ;
+      width="80%"
+      ;
+      onmouseover="this.stop()"
+      ;
+      onmouseout="this.start()"
+      ;
+       >
+            <div id="quotes-slider">
+                 <div class="mag-col" style="width: 940px; margin-right: 15px;">
+                     <h4 class="h4_">John Doe</h4>
+                     <h6 class="h6_">DESIGNER</h6>
+                     <p class="P_">" Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Cras lacinia magna vel molestie faucibus. Cras lacinia magna vel molestie faucibus."</p>
+             </div>
+          
+             <div class="mag-col" style="width: 940px; margin-right: 15px;">
+                     <h4 class="h4_">Tim Crook</h4>
+                     <h6 class="h6_">DIRECTOR</h6>
+                     <p class="P_">" Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+             </div>
+          
+             <div class="mag-col" style="width: 940px; margin-right: 15px;">
+                      <h4 class="h4_">  Clara White</h4>
+                      <h6 class="h6_">MARKETING</h6>
+                      <p class="P_">" Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Cras lacinia magna vel molestie faucibus. Cras lacinia magna vel molestie faucibus."</p>
+              </div>
+        
+              <div class="mag-col" style="width: 940px; margin-right: 15px;">
+                       <h4 class="h4_">Philip Wilson</h4>
+                       <h6 class="h6_">CONSTUCTOR</h6>
+                       <p c lass="P_">" Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br>Donec auctor et urnaLorem ipsum dolor sit amet, consectetur adipiscing elit."</p>
+              </div> 
+
+     </marquee>  
+  </section> <br><br><br>
+    
+  
+
+
+  
+  
+  <!-- Pjesa ku i tregon special prices e ndertume me 4 boxes  -->
 
     <div class="container">
       <div class="box1">
@@ -331,7 +505,7 @@
           <p class="article-title">Our pricing list:</p>
           <br /><br />
         </div>
-        <p class="font2">
+        <p class="font2_">
           A price list is a list of prices defined for a set of items. Each
           price list is applicable to a particular customer or a group of
           customers for a particular duration. A pricing organization can define
@@ -372,6 +546,11 @@
     </div>
     <br /><br /><br /><br />
 
+
+
+
+
+
     <!-- Pjesa e fundit, para footerit, "Great Clients" me foto levizese. -->
 
     <table width="95%">
@@ -402,6 +581,11 @@
         </td>
       </tr>
     </table>
+
+
+
+
+    <!-- Footer -->
 
     <footer class="footer">
       <div class="wrapper">
@@ -504,5 +688,16 @@
         </div>
       </div>
     </footer>
+
+    
+
+<!-- Butoni scroll up  -->
+
+    <div class="scroll-to-top">
+      <a href="#logo"
+        ><img class="up-arrow" src="images/uparrow.png" alt="up arrow"
+      /></a>
+    </div>
+
   </body>
 </html>
