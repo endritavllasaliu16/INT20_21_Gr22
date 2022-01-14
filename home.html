@@ -226,8 +226,25 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
               lacinia magna vel molestie faucibus. Donec auctor et urnaLorem
               ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
-              magna vel molestie faucibus.
+              magna vel molestie.
             </p>
+            <h1>Calculate house price</h1>
+
+            <div class="controls" tabindex="0">
+              <form>
+                <div>
+                  <label for="number1">Meters m<sup>2</sup> </label>
+                  <input type="text" id="number1" value="0" />
+                </div>
+                <div>
+                  <label for="number2">Price per m<sup>2</sup>: </label>
+                  <input type="text" id="number2" value="10000" disabled />
+                </div>
+              </form>
+
+              <p class="result">Total price: 0$</p>
+            </div>
+            <script src="main.js"></script>
           </aside>
         </article>
 
