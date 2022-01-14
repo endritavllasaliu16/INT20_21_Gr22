@@ -57,6 +57,8 @@
     color: rgb(73, 62, 224);
   }
   
+
+
   /* Pjesa e prezantimit te faqes Blog Post      */
 
   #canvas1{
@@ -89,6 +91,10 @@
     font-weight: normal;
   }
   
+
+
+
+
   /*Klasa center permban tabelen kryesore*/
   .center {
     margin-left: auto;
@@ -360,3 +366,124 @@
     justify-content: space-between;
     align-items: center;
   }
+
+
+ /* per Jquery */
+
+  .out-btn{
+    margin-right: 10px;
+    background-color: lightgray ;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight:bold ;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+ 
+    margin-left: 200px;
+
+  }
+
+  .in-btn{
+    margin-right: 10px;
+    background-color: lightgray ;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight:bold ;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    
+  }
+
+  #flip{
+    font-family: 'Montserrat';
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: 600px;
+
+  }
+
+
+
+  /* Scroll up */
+
+  .scroll-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    height: 50px;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    background-color: #bda87f;
+    border-radius: 50%;
+    box-shadow: 0px 1px 2px 2px rgb(165, 163, 163);
+    z-index: 4;
+  }
+  
+  .up-arrow {
+    padding: 25%;
+  }
+
+
+
+  .hr{
+    background-color:  #bda87f;
+    width: 100px;
+    margin-left: 15px;
+   }
+
+
+
+
+   /* Pjesa me service planning */
+   
+    .service_planning{
+       background-color: #333333;
+       color: white;
+       border-radius: 10px;
+       margin-left: 10px;
+
+    }
+
+    .service_planning_heading{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 30px;
+      font-weight: 500;
+      height: 50px;
+      margin-top: 20px;
+      margin-left: 30px;
+    
+    }
+
+    .lista_service_planning{
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 20px;
+      font-weight: 300;
+      margin-left: 60px;
+      /* display: flex; */
+    }
+
+    .show-SERVICE-planning{
+      font-family: sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 15px;
+
+    }
+    .numrat{
+      color: #bda87f;
+    }
+
+    .button_service{
+      margin-right: 10px;
+    background-color: lightgray ;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'Montserrat';
+    font-weight:bold ;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+    
+    }
