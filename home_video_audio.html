@@ -225,8 +225,17 @@
             <hr class="flinders_street__station-line" />
             <p class="flinders_street__station-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              lacinia magna vel molestie faucibus. <br />
+              lacinia magna vel molestie faucibus.Lorem ipsum dolor sit amet.
             </p>
+            <p id="demo"></p>
+
+            <script>
+              let text = "Lorem ipsum dolor sit amet.";
+              let pattern = /Lorem ipsum dolor./g;
+              let result = pattern.exec(text);
+
+              document.getElementById("demo").innerHTML = result;
+            </script>
             <ul class="about__us-style__lists">
               <li>Interior design styles</li>
               <ol
@@ -247,7 +256,6 @@
                   <li>Eclectic</li>
                 </ol>
                 <li>Transitional</li>
-                <li>Rustic</li>
               </ol>
             </ul>
           </aside>
@@ -270,11 +278,11 @@
             <h3 class="milwaukee_summer_house-heading">03</h3>
             <h1 class="milwaukee_summer_house-title">Milwaukee Summer House</h1>
             <hr class="milwaukee_summer_house-line" />
-            <p class="milwaukee_summer_house-paragraph">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+            <br class="milwaukee_summer_house-paragraph">
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
               lacinia magna vel molestie faucibus. Donec auctor et urnaLorem
               ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
-              magna vel molestie faucibus.
+              magna vel molestie.</br>
             </p>
           </aside>
         </article>
