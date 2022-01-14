@@ -209,7 +209,14 @@
 .flinders_street__station-paragraph {
   line-height: 1.5;
 }
-
+#number1,
+#number2 {
+  background-color: white;
+  color: #2d2d2d;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  padding: 3px 7px;
+}
 .news {
   border: 2px solid #ececec;
   padding: 40px;
