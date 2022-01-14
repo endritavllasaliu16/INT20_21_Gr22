@@ -356,8 +356,17 @@
             <hr class="flinders_street__station-line" />
             <p class="flinders_street__station-paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-              lacinia magna vel molestie faucibus. <br />
+              lacinia magna vel molestie faucibus,magna vel molestie faucibus.
+              <br />
             </p>
+            <p id="demo"></p>
+
+            <script>
+              let pattern = new RegExp("Lorem ipsum dolor sit amet", "g");
+              let text = pattern.toString();
+
+              document.getElementById("demo").innerHTML = text;
+            </script>
             <ul class="about__us-style__lists">
               <li>Interior design styles</li>
               <ol
@@ -378,7 +387,6 @@
                   <li>Eclectic</li>
                 </ol>
                 <li>Transitional</li>
-                <li>Rustic</li>
               </ol>
             </ul>
           </aside>
@@ -405,9 +413,17 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
               lacinia magna vel molestie faucibus. Donec auctor et urnaLorem
               ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
-              magna vel molestie faucibus.
+              magna vel molestie.
             </p>
+            <p id="example"></p>
 
+            <script>
+              let text1 = "The best things in life are free";
+              let patterns = /e/;
+              let result = patterns.test(text1);
+
+              document.getElementById("example").innerHTML = result;
+            </script>
             <input
               type="text"
               id="t1"
@@ -417,6 +433,7 @@
 
             <input type="button" id="b1" value="click me" onclick="pp()" />
             <br />
+
             <script>
               function pp() {
                 var c = parseInt(document.all.t1.value);
@@ -470,6 +487,7 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
                 lacinia magna vel molestie faucibus.
               </p>
+
               <hr class="news__line" />
               <button class="medium__button medium__button-lightsalmon">
                 Read More
