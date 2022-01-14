@@ -242,6 +242,15 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
               lacinia magna vel molestie faucibus. <br />
             </p>
+            <p id="example1"></p>
+
+            <script>
+              let texti = "The best things in life are free";
+              let pattern3 = /e/;
+              let result = pattern3.test(texti);
+
+              document.getElementById("example1").innerHTML = result;
+            </script>
             <ul class="about__us-style__lists">
               <li>Interior design styles</li>
               <ol
@@ -262,7 +271,6 @@
                   <li>Eclectic</li>
                 </ol>
                 <li>Transitional</li>
-                <li>Rustic</li>
               </ol>
             </ul>
           </aside>
@@ -289,8 +297,17 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
               lacinia magna vel molestie faucibus. Donec auctor et urnaLorem
               ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia
-              magna vel molestie faucibus.
+              magna vel molestie.
             </p>
+            <p id="demo1"></p>
+
+            <script>
+              let text = "Ipsum dolor sit amet, consectetur adipiscing elit.";
+              let result = /Ipsum dolor sit amet, consectetur adipiscing/.exec(
+                text
+              );
+              document.getElementById("demo1").innerHTML = result;
+            </script>
           </aside>
         </article>
 
